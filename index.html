@@ -2,2287 +2,481 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PrimeGrow Services | Real Estate Digital Marketing Agency</title>
-
-<meta name="description"
-content="PrimeGrow Services provides professional digital marketing services for real estate agents, builders, property consultants and developers.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrimeGrow Services | Real Estate Digital Marketing Agency, Noida</title>
+<meta name="description" content="PrimeGrow Services builds websites, social media, Google Business Profiles, ads and lead follow-up for real estate builders, developers, brokers and channel partners. Plans from ₹2,999.">
+<meta property="og:title" content="PrimeGrow Services | Real Estate Digital Marketing">
+<meta property="og:description" content="From first search to site visit: websites, Meta and Google ads, local SEO and WhatsApp follow-up for real estate.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Inter,Arial,sans-serif;
-    background:#f5f9ff;
-    color:#172033;
-    line-height:1.5;
-    overflow-x:hidden;
-}
-
-:root{
-    --blue:#0757c8;
-    --blue2:#0b7cff;
-    --dark:#06152e;
-    --green:#16a34a;
-    --red:#dc2626;
-    --light:#edf5ff;
-    --white:#ffffff;
-    --text:#172033;
-    --muted:#5f6f85;
-}
-
-.container{
-    width:min(1160px,92%);
-    margin:auto;
-}
-
-/* ================= HEADER ================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:2000;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid #e3eaf3;
-    box-shadow:0 3px 18px rgba(0,30,80,.05);
-}
-
-.nav{
-    min-height:72px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    width:195px;
-    max-height:60px;
-    object-fit:contain;
-}
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:22px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#172033;
-    font-size:14px;
-    font-weight:800;
-    transition:.25s;
-}
-
-nav a:hover{
-    color:var(--blue);
-}
-
-.nav-btn{
-    background:var(--blue);
-    color:white!important;
-    padding:11px 18px;
-    border-radius:9px;
-    box-shadow:0 6px 18px rgba(7,87,200,.22);
-}
-
-.menu-toggle{
-    display:none;
-    border:0;
-    background:var(--blue);
-    color:white;
-    width:42px;
-    height:42px;
-    border-radius:9px;
-    font-size:22px;
-    cursor:pointer;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    position:relative;
-    padding:72px 0 65px;
-    overflow:hidden;
-    background:
-    radial-gradient(circle at 10% 20%,rgba(0,115,255,.14),transparent 30%),
-    radial-gradient(circle at 90% 80%,rgba(22,163,74,.12),transparent 28%),
-    linear-gradient(135deg,#ffffff 0%,#eef6ff 50%,#e8f3ff 100%);
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:400px;
-    height:400px;
-    border-radius:50%;
-    background:rgba(7,87,200,.08);
-    top:-180px;
-    right:-120px;
-    animation:heroCircle 8s ease-in-out infinite;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    border:35px solid rgba(7,87,200,.06);
-    bottom:-130px;
-    left:-100px;
-    animation:heroCircle2 7s ease-in-out infinite;
-}
-
-.hero-grid{
-    position:relative;
-    z-index:2;
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:45px;
-}
-
-.badge{
-    display:inline-flex;
-    align-items:center;
-    background:#e5f0ff;
-    border:1px solid #c9ddff;
-    color:var(--blue);
-    padding:9px 15px;
-    border-radius:30px;
-    font-size:12px;
-    font-weight:900;
-    margin-bottom:17px;
-    animation:pulseBadge 2.5s infinite;
-}
-
-.hero h1{
-    font-family:Poppins,sans-serif;
-    font-size:clamp(40px,5.4vw,67px);
-    line-height:1.03;
-    letter-spacing:-2.4px;
-    color:var(--dark);
-    margin-bottom:20px;
-    font-weight:900;
-}
-
-.hero h1 span{
-    color:var(--blue);
-}
-
-.hero p{
-    color:#4f6077;
-    font-size:17px;
-    line-height:1.7;
-    max-width:650px;
-    margin-bottom:26px;
-    font-weight:600;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:13px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    border:0;
-    cursor:pointer;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 21px;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:900;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn-primary{
-    background:linear-gradient(135deg,#0757c8,#0b7cff);
-    color:white;
-    box-shadow:0 10px 25px rgba(7,87,200,.28);
-}
-
-.btn-primary:hover{
-    box-shadow:0 15px 30px rgba(7,87,200,.35);
-}
-
-.btn-whatsapp{
-    background:#16a34a;
-    color:white;
-    box-shadow:0 10px 22px rgba(22,163,74,.25);
-}
-
-/* HERO IMAGE */
-
-.hero-card{
-    position:relative;
-    background:white;
-    padding:10px;
-    border-radius:22px;
-    box-shadow:0 25px 65px rgba(12,50,100,.20);
-    animation:float 4.5s ease-in-out infinite;
-}
-
-.hero-card::before{
-    content:"";
-    position:absolute;
-    inset:-7px;
-    border:2px solid rgba(7,87,200,.13);
-    border-radius:27px;
-    z-index:-1;
-}
-
-.hero-card img{
-    width:100%;
-    height:410px;
-    object-fit:cover;
-    border-radius:16px;
-    display:block;
-}
-
-.hero-overlay{
-    position:absolute;
-    left:28px;
-    right:28px;
-    bottom:28px;
-    background:rgba(255,255,255,.96);
-    padding:16px;
-    border-radius:13px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
-
-.hero-overlay strong{
-    display:block;
-    color:var(--dark);
-    font-size:16px;
-    font-weight:900;
-}
-
-.hero-overlay span{
-    color:#64748b;
-    font-size:12px;
-    font-weight:600;
-}
-
-/* ================= TRUST ================= */
-
-.trust{
-    background:linear-gradient(100deg,#041127,#0b2750,#041127);
-    color:white;
-    padding:19px 0;
-}
-
-.trust-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-    text-align:center;
-}
-
-.trust strong{
-    display:block;
-    font-size:24px;
-    font-weight:900;
-}
-
-.trust span{
-    font-size:11px;
-    color:#b9c9df;
-    font-weight:600;
-}
-
-/* ================= SECTION ================= */
-
-section{
-    padding:70px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:38px;
-}
-
-.mini{
-    color:var(--blue);
-    font-size:12px;
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:1.8px;
-}
-
-.section-title h2{
-    font-family:Poppins,sans-serif;
-    color:var(--dark);
-    font-size:36px;
-    line-height:1.2;
-    margin:7px 0 9px;
-    font-weight:900;
-}
-
-.section-title p{
-    color:#617087;
-    font-size:14px;
-    max-width:720px;
-    margin:auto;
-    font-weight:600;
-}
-
-/* ================= SERVICES ================= */
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.service{
-    background:white;
-    border:1px solid #e1e9f3;
-    border-radius:17px;
-    overflow:hidden;
-    transition:.35s;
-    box-shadow:0 5px 20px rgba(0,40,90,.04);
-}
-
-.service:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(12,45,90,.13);
-    border-color:#c7dcf8;
-}
-
-.service-img{
-    width:100%;
-    height:165px;
-    object-fit:cover;
-    display:block;
-}
-
-.service-content{
-    padding:19px;
-}
-
-.service h3{
-    font-size:18px;
-    color:var(--dark);
-    margin-bottom:8px;
-    font-weight:900;
-}
-
-.service p{
-    color:#667085;
-    font-size:13px;
-    line-height:1.6;
-    font-weight:600;
-}
-
-.service ul{
-    padding-left:18px;
-    margin-top:10px;
-}
-
-.service li{
-    font-size:12px;
-    margin:5px 0;
-    font-weight:700;
-    color:#334155;
-}
-
-/* ================= PRICING ================= */
-
-.pricing{
-    background:
-    radial-gradient(circle at 10% 10%,rgba(7,87,200,.08),transparent 25%),
-    linear-gradient(135deg,#eef6ff,#f7fbff);
-}
-
-.plans{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.plan{
-    background:white;
-    border:1px solid #dce6f2;
-    border-radius:18px;
-    padding:27px;
-    position:relative;
-    transition:.3s;
-    box-shadow:0 8px 25px rgba(0,40,90,.05);
-}
-
-.plan:hover{
-    transform:translateY(-7px);
-    box-shadow:0 20px 40px rgba(0,40,90,.12);
-}
-
-.plan.popular{
-    border:2px solid var(--blue);
-    transform:translateY(-9px);
-    box-shadow:0 18px 40px rgba(7,87,200,.16);
-}
-
-.plan.popular:hover{
-    transform:translateY(-14px);
-}
-
-.popular-tag{
-    position:absolute;
-    right:16px;
-    top:16px;
-    background:var(--blue);
-    color:white;
-    padding:6px 11px;
-    border-radius:20px;
-    font-size:9px;
-    font-weight:900;
-}
-
-.plan h3{
-    color:var(--dark);
-    font-size:21px;
-    font-weight:900;
-}
-
-.price{
-    color:var(--blue);
-    font-size:35px;
-    font-weight:900;
-    margin:9px 0 17px;
-}
-
-.price small{
-    color:#64748b;
-    font-size:12px;
-    font-weight:700;
-}
-
-.plan ul{
-    list-style:none;
-    margin-bottom:20px;
-}
-
-.plan li{
-    border-bottom:1px solid #edf1f6;
-    padding:9px 0;
-    font-size:13px;
-    font-weight:700;
-    color:#344054;
-}
-
-.plan li::before{
-    content:"✓";
-    color:var(--green);
-    font-weight:900;
-    margin-right:8px;
-}
-
-/* ================= WHY ================= */
-
-.why-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:22px;
-}
-
-.why-card{
-    background:white;
-    border:1px solid #e1e8f1;
-    border-radius:17px;
-    padding:27px;
-    box-shadow:0 6px 22px rgba(0,30,80,.04);
-}
-
-.why-card h3{
-    font-size:21px;
-    margin-bottom:12px;
-    font-weight:900;
-}
-
-.why-card p{
-    color:#5f6f85;
-    font-size:14px;
-    line-height:1.7;
-    font-weight:600;
-}
-
-.gain{
-    border-top:4px solid #16a34a;
-}
-
-.gain h3{
-    color:#15803d;
-}
-
-.loss{
-    border-top:4px solid #dc2626;
-}
-
-.loss h3{
-    color:#dc2626;
-}
-
-/* ================= PROCESS ================= */
-
-.process-section{
-    background:
-    linear-gradient(135deg,#eef5fb,#f8fbff);
-}
-
-.process{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.step{
-    background:white;
-    border:1px solid #e1e8f1;
-    border-radius:16px;
-    padding:23px 15px;
-    text-align:center;
-    transition:.3s;
-}
-
-.step:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 30px rgba(0,30,80,.09);
-}
-
-.step-number{
-    width:45px;
-    height:45px;
-    display:grid;
-    place-items:center;
-    background:#e8f2ff;
-    color:var(--blue);
-    border-radius:50%;
-    font-weight:900;
-    font-size:16px;
-    margin:auto auto 11px;
-}
-
-.step h3{
-    font-size:15px;
-    font-weight:900;
-}
-
-.step p{
-    color:#718096;
-    font-size:12px;
-    margin-top:6px;
-    font-weight:600;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    position:relative;
-    overflow:hidden;
-    background:
-    radial-gradient(circle at 15% 30%,rgba(0,132,255,.35),transparent 30%),
-    radial-gradient(circle at 85% 70%,rgba(22,163,74,.20),transparent 25%),
-    linear-gradient(120deg,#06152e,#0a4ba8);
-    color:white;
-    text-align:center;
-    padding:75px 15px;
-}
-
-.cta::before{
-    content:"";
-    position:absolute;
-    width:280px;
-    height:280px;
-    border:2px solid rgba(255,255,255,.08);
-    border-radius:50%;
-    top:-150px;
-    right:5%;
-    animation:rotateCircle 12s linear infinite;
-}
-
-.cta h2{
-    position:relative;
-    font-family:Poppins,sans-serif;
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:10px;
-    font-weight:900;
-}
-
-.cta p{
-    position:relative;
-    color:#d4e1f5;
-    font-size:15px;
-    margin-bottom:23px;
-    font-weight:600;
-}
-
-/* ================= CONTACT ================= */
-
-.contact-section{
-    background:#f7faff;
-}
-
-.contact-box{
-    background:white;
-    border-radius:20px;
-    padding:35px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-    border:1px solid #e0e8f2;
-    box-shadow:0 12px 35px rgba(0,30,80,.07);
-}
-
-.contact-info h3{
-    font-family:Poppins,sans-serif;
-    font-size:28px;
-    color:var(--dark);
-    margin-bottom:12px;
-    font-weight:900;
-}
-
-.contact-info p{
-    color:#63738a;
-    font-size:14px;
-    line-height:1.7;
-    font-weight:600;
-}
-
-.contact-item{
-    margin-top:17px;
-    padding:13px;
-    background:#f5f9ff;
-    border-radius:10px;
-    font-size:13px;
-    font-weight:800;
-}
-
-.contact-item span{
-    color:var(--blue);
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#040d1d;
-    color:white;
-    padding:45px 0 20px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:35px;
-}
-
-footer h3{
-    font-size:19px;
-    margin-bottom:10px;
-    font-weight:900;
-}
-
-footer p,
-footer a{
-    color:#aebbd0;
-    font-size:12px;
-    text-decoration:none;
-    line-height:2;
-    font-weight:600;
-}
-
-footer a:hover{
-    color:white;
-}
-
-.copyright{
-    border-top:1px solid #1b2940;
-    text-align:center;
-    margin-top:30px;
-    padding-top:17px;
-    color:#8090a8;
-    font-size:11px;
-}
-
-/* ================= FLOATING ENQUIRY ================= */
-
-.floating-enquiry{
-    position:fixed;
-    right:0;
-    top:52%;
-    transform:translateY(-50%);
-    z-index:2500;
-    writing-mode:vertical-rl;
-    background:linear-gradient(180deg,#0757c8,#0b7cff);
-    color:white;
-    padding:18px 10px;
-    border-radius:10px 0 0 10px;
-    font-size:13px;
-    font-weight:900;
-    cursor:pointer;
-    box-shadow:0 8px 28px rgba(0,0,0,.25);
-    transition:.3s;
-}
-
-.floating-enquiry:hover{
-    padding-right:15px;
-}
-
-/* ================= WHATSAPP ================= */
-
-.whatsapp{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    width:57px;
-    height:57px;
-    display:grid;
-    place-items:center;
-    background:#25d366;
-    color:white;
-    border-radius:50%;
-    font-size:27px;
-    z-index:2500;
-    text-decoration:none;
-    box-shadow:0 9px 28px rgba(0,0,0,.25);
-    animation:whatsappPulse 2s infinite;
-}
-
-/* ================= POPUP ================= */
-
-.popup{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(2,12,30,.78);
-    z-index:5000;
-    align-items:center;
-    justify-content:center;
-    padding:18px;
-}
-
-.popup.active{
-    display:flex !important;
-}
-
-.popup-box{
-    width:min(470px,100%);
-    max-height:92vh;
-    overflow-y:auto;
-    background:white;
-    border-radius:20px;
-    padding:28px;
-    position:relative;
-    animation:popup .3s ease;
-    box-shadow:0 30px 80px rgba(0,0,0,.3);
-}
-
-.close{
-    position:absolute;
-    right:13px;
-    top:13px;
-    width:34px;
-    height:34px;
-    border:0;
-    border-radius:50%;
-    background:#edf2f7;
-    color:#172033;
-    font-size:21px;
-    cursor:pointer;
-    font-weight:800;
-}
-
-.popup-box h2{
-    font-family:Poppins,sans-serif;
-    color:var(--dark);
-    font-size:26px;
-    font-weight:900;
-    margin-bottom:4px;
-}
-
-.popup-box p{
-    color:#718096;
-    font-size:12px;
-    margin-bottom:17px;
-    font-weight:600;
-}
-
-.selected-plan{
-    background:#eaf3ff;
-    border:1px solid #cfe2ff;
-    color:var(--blue);
-    padding:10px;
-    border-radius:9px;
-    margin-bottom:13px;
-    font-size:13px;
-    font-weight:900;
-}
-
-.form-group{
-    margin-bottom:11px;
-}
-
-.form-group label{
-    display:block;
-    font-size:12px;
-    font-weight:900;
-    color:#344054;
-    margin-bottom:5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #d6e0eb;
-    border-radius:9px;
-    outline:none;
-    font-family:inherit;
-    font-size:13px;
-    background:#fbfdff;
-    transition:.2s;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    border-color:var(--blue);
-    box-shadow:0 0 0 3px rgba(7,87,200,.08);
-}
-
-.form-group textarea{
-    height:80px;
-    resize:none;
-}
-
-/* ================= REVEAL ================= */
-
-.reveal{
-    opacity:0;
-    transform:translateY(28px);
-    transition:all .7s ease;
-}
-
-.reveal.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-/* ================= ANIMATIONS ================= */
-
-.word{
-    display:inline-block;
-    opacity:0;
-    transform:translateY(16px);
-    animation:word .55s forwards;
-    margin-right:7px;
-}
-
-@keyframes word{
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes float{
-    0%,100%{
-        transform:translateY(0);
-    }
-    50%{
-        transform:translateY(-10px);
-    }
-}
-
-@keyframes popup{
-    from{
-        transform:scale(.90) translateY(15px);
-        opacity:0;
-    }
-    to{
-        transform:scale(1) translateY(0);
-        opacity:1;
-    }
-}
-
-@keyframes pulseBadge{
-    0%,100%{
-        box-shadow:0 0 0 0 rgba(7,87,200,.15);
-    }
-    50%{
-        box-shadow:0 0 0 8px rgba(7,87,200,0);
-    }
-}
-
-@keyframes heroCircle{
-    0%,100%{
-        transform:translate(0,0) scale(1);
-    }
-    50%{
-        transform:translate(-40px,30px) scale(1.12);
-    }
-}
-
-@keyframes heroCircle2{
-    0%,100%{
-        transform:rotate(0deg) scale(1);
-    }
-    50%{
-        transform:rotate(180deg) scale(1.15);
-    }
-}
-
-@keyframes rotateCircle{
-    from{
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(360deg);
-    }
-}
-
-@keyframes whatsappPulse{
-    0%,100%{
-        box-shadow:0 9px 28px rgba(0,0,0,.25);
-    }
-    50%{
-        box-shadow:0 9px 28px rgba(37,211,102,.45),0 0 0 8px rgba(37,211,102,.08);
-    }
-}
-
-/* ================= MOBILE ================= */
+:root{--navy:#06152e;--blue:#0757c8;--sky:#0b7cff;--green:#16a34a;--red:#c2410c;--bg:#f5f9ff;--line:#dfe8f4;--text:#172033;--muted:#5b6b82;--r:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif;line-height:1.15;color:var(--navy)}
+section{padding:50px 0}
+.head{max-width:680px;margin-bottom:24px}
+.head h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.8px;margin-bottom:10px}
+.head p{color:var(--muted)}
+.center{text-align:center;margin-inline:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{width:180px;max-height:56px;object-fit:contain}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;font-size:14px;font-weight:600;color:#33415a}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:12px;border:0;font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff!important;box-shadow:0 10px 24px rgba(7,87,200,.25)}
+.btn-g{background:var(--green);color:#fff!important}
+.btn-o{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.menu{display:none;width:42px;height:42px;border-radius:10px;border:0;background:var(--blue);color:#fff;font-size:22px;cursor:pointer}
+
+/* hero */
+.hero{padding:36px 0 44px;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 10%,rgba(11,124,255,.16),transparent 38%),radial-gradient(circle at 5% 90%,rgba(22,163,74,.10),transparent 30%),linear-gradient(160deg,#fff,#eaf3ff)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.pill{display:inline-block;background:#e4efff;color:var(--blue);border:1px solid #c9ddff;border-radius:99px;padding:7px 15px;font-size:13px;font-weight:600;margin-bottom:14px}
+.hero h1{font-size:clamp(36px,4.8vw,56px);letter-spacing:-1.8px;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p.lead{font-size:18px;color:#46566e;max-width:540px;margin-bottom:20px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+
+
+/* strip */
+.strip{background:var(--navy);color:#fff;padding:16px 0}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.strip strong{display:block;font:700 22px Poppins,sans-serif}
+.strip span{font-size:12px;color:#a9bbd6}
+
+/* services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.card .ic{font-size:26px;margin-bottom:10px}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{font-size:14px;color:var(--muted)}
+.card small{display:block;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--red);font-weight:500}
+
+/* pricing */
+.pricing{background:linear-gradient(160deg,#eaf3ff,#f7fbff)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:#fff;font:600 14px Inter,sans-serif;cursor:pointer;color:#33415a}
+.tab[aria-selected=true]{background:var(--blue);color:#fff;border-color:var(--blue)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;display:flex;flex-direction:column}
+.plan.pop{border:2px solid var(--blue);box-shadow:0 18px 40px rgba(7,87,200,.14)}
+.plan .tag{position:absolute;top:16px;right:16px;background:var(--blue);color:#fff;border-radius:99px;padding:4px 11px;font-size:11px;font-weight:600}
+.plan h3{font-size:19px}
+.price{font:800 34px Poppins,sans-serif;color:var(--blue);margin:8px 0 14px}
+.price small{font:500 13px Inter;color:var(--muted)}
+.plan p{font-size:14px;color:#42536b;flex:1;margin-bottom:18px}
+.fine{font-size:13px;color:var(--muted);margin-top:18px}
+
+/* picker */
+.picker{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}
+.picker select{width:100%;padding:14px;border:1px solid var(--line);border-radius:12px;font:500 15px Inter;background:#fbfdff;margin-top:14px}
+.result{background:var(--bg);border-radius:18px;padding:24px;min-height:150px}
+.result h3{font-size:18px;margin-bottom:6px}
+.result p{font-size:14px;color:var(--muted)}
+.result .stack{font-weight:600;color:var(--blue);margin:8px 0}
+
+/* gain/loss */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.two .card{padding:24px}
+.two ul{list-style:none;margin-top:14px}
+.two li{padding:9px 0 9px 26px;position:relative;font-size:14px;border-bottom:1px solid #eef2f7}
+.two li:before{position:absolute;left:0;font-weight:700}
+.gain{border-top:4px solid var(--green)}.gain li:before{content:"✓";color:var(--green)}
+.loss{border-top:4px solid var(--red)}.loss li:before{content:"!";color:var(--red)}
+
+/* process */
+.process{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{background:var(--bg);border-radius:var(--r);padding:22px;position:relative}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;margin-bottom:12px}
+.step h3{font-size:16px;margin-bottom:4px}
+.step p{font-size:13px;color:var(--muted)}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer;color:var(--navy)}
+details p{margin-top:10px;font-size:14px;color:var(--muted)}
+
+/* cta + contact */
+.cta{background:linear-gradient(120deg,var(--navy),#0a4ba8);color:#fff;text-align:center;padding:48px 0}
+.cta h2{color:#fff;font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+.cta p{color:#cfdcf2;margin-bottom:24px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}
+.contact h2{font-size:30px;margin-bottom:10px}
+.contact p{color:var(--muted);font-size:14px}
+.ci{margin-top:14px;padding:13px 15px;background:var(--bg);border-radius:12px;font-size:14px;font-weight:500}
+.ci b{color:var(--blue)}
+.f{margin-bottom:12px}
+.f label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+.f input,.f select,.f textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:14px Inter;background:#fbfdff}
+.f textarea{height:84px;resize:vertical}
+
+footer{background:#040d1d;color:#aebbd0;padding:30px 0 18px;font-size:13px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px}
+footer h3{color:#fff;font-size:16px;margin-bottom:10px}
+footer a{display:block;text-decoration:none;line-height:2}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #1b2940;margin-top:28px;padding-top:16px;text-align:center;font-size:12px;color:#7f90a8}
+
+.wa{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:26px;text-decoration:none;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+
+/* hero art + animation */
+.hero h1 em{background:linear-gradient(90deg,#0757c8,#0b7cff,#16a34a,#0757c8);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+.hero .pill,.hero h1,.hero p.lead,.hero .cta-row,.hero .note{animation:up .7s both}
+.hero h1{animation-delay:.1s}.hero p.lead{animation-delay:.2s}.hero .cta-row{animation-delay:.3s}.hero .note{animation-delay:.4s}
+.blob{position:absolute;border-radius:50%;filter:blur(8px);pointer-events:none}
+.b1{width:260px;height:260px;background:rgba(11,124,255,.12);top:-90px;right:-60px;animation:drift 9s ease-in-out infinite}
+.b2{width:180px;height:180px;background:rgba(22,163,74,.10);bottom:-70px;left:-50px;animation:drift 11s ease-in-out infinite reverse}
+.art{position:relative;max-width:500px;margin-left:auto;animation:up .8s .2s both}
+.art svg{display:block;width:100%;height:auto;border-radius:28px;box-shadow:0 30px 60px rgba(6,21,46,.22)}
+.b{transform-box:fill-box;transform-origin:bottom;animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d)}
+.bl{animation:blink 4s ease-in-out infinite}.bl2{animation:blink 4s ease-in-out 2s infinite}
+.pin{animation:bob 2s ease-in-out infinite}
+.road{animation:dash 1.2s linear infinite}
+.fc{position:absolute;background:#fff;border-radius:14px;padding:9px 14px;box-shadow:0 12px 30px rgba(6,21,46,.18);font-size:12px;color:var(--muted);display:flex;flex-direction:column;animation:fl 4s ease-in-out infinite}
+.fc b{color:var(--navy);font-size:13px}
+.f1{left:-14px;top:64px}.f2{right:-12px;top:190px;animation-delay:1s}.f3{left:18px;bottom:62px;animation-delay:2s}
+.flow{background:#fff;border-bottom:1px solid var(--line);padding:12px 0}
+.flow .wrap{display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap}
+.chip{padding:7px 14px;border-radius:99px;background:var(--bg);border:1px solid var(--line);font-size:13px;font-weight:600;animation:glow 7s infinite}
+.flow i{color:#9db0cc;font-style:normal}
+.sc{padding:0;overflow:hidden;transition:box-shadow .3s}
+.sc:hover{box-shadow:0 18px 36px rgba(12,45,90,.14)}
+.sb{padding:18px 20px 20px}
+.ban{height:92px;display:grid;place-items:center;position:relative;overflow:hidden}
+.ban:before,.ban:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12)}
+.ban:before{width:120px;height:120px;right:-30px;top:-50px;animation:drift 8s ease-in-out infinite}
+.ban:after{width:70px;height:70px;left:14px;bottom:-30px;animation:drift 6s ease-in-out infinite reverse}
+.ban svg{width:50px;height:50px;position:relative;z-index:1;transition:transform .4s}
+.sc:hover .ban svg{transform:scale(1.15) rotate(-6deg)}
+.show{display:grid;grid-template-columns:.5fr 1fr;gap:24px;align-items:center}
+.phone{max-width:230px;margin:auto}.phone svg,.dash svg{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 30px rgba(6,21,46,.2))}
+.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both}
+.line{stroke-dasharray:520;animation:draw 2.2s .3s ease-out both}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+.rv:not(.in) *{animation-play-state:paused}
+.plan{animation:up .45s both}
+.wa{animation:ring 2.4s infinite}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:300% 0}}
+@keyframes drift{50%{transform:translate(-22px,18px) scale(1.1)}}
+@keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes blink{0%,100%{opacity:.15}50%{opacity:1}}
+@keyframes bob{50%{transform:translateY(-9px)}}
+@keyframes dash{to{stroke-dashoffset:-26}}
+@keyframes fl{50%{transform:translateY(-9px)}}
+@keyframes glow{0%,14%{background:var(--blue);color:#fff;border-color:var(--blue)}15%,100%{background:var(--bg);color:inherit;border-color:var(--line)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes draw{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}
+@keyframes ring{0%,100%{box-shadow:0 8px 24px rgba(0,0,0,.25)}50%{box-shadow:0 8px 24px rgba(37,211,102,.5),0 0 0 10px rgba(37,211,102,.12)}}
 
 @media(max-width:900px){
-
-    nav{
-        display:none;
-        position:absolute;
-        top:72px;
-        left:0;
-        right:0;
-        background:white;
-        padding:18px 5%;
-        flex-direction:column;
-        align-items:stretch;
-        gap:0;
-        border-bottom:1px solid #e1e8f1;
-        box-shadow:0 15px 30px rgba(0,30,80,.1);
-    }
-
-    nav.mobile-open{
-        display:flex;
-    }
-
-    nav a{
-        padding:12px 8px;
-        border-bottom:1px solid #edf1f6;
-    }
-
-    nav .nav-btn{
-        text-align:center;
-        margin-top:10px;
-        border-bottom:0;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero{
-        padding:55px 0;
-    }
-
-    .hero h1{
-        font-size:44px;
-    }
-
-    .hero-card img{
-        height:330px;
-    }
-
-    .services,
-    .plans{
-        grid-template-columns:1fr;
-    }
-
-    .plan.popular,
-    .plan.popular:hover{
-        transform:none;
-    }
-
-    .why-grid{
-        grid-template-columns:1fr;
-    }
-
-    .process{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .contact-box{
-        grid-template-columns:1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
+ section{padding:38px 0}
+ .menu{display:block}
+ nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px 5% 18px;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}
+ nav a{padding:12px 6px;border-bottom:1px solid #eef2f7}
+ .hero-grid,.picker,.two,.contact,.fg,.show{grid-template-columns:1fr}
+ .art{margin:0 auto}.f1{left:-4px}.f2{right:-4px}
+ .grid3{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .strip .wrap{grid-template-columns:1fr 1fr}
 }
-
-@media(max-width:600px){
-
-    .logo{
-        width:165px;
-    }
-
-    .hero{
-        padding:45px 0;
-    }
-
-    .hero h1{
-        font-size:37px;
-        letter-spacing:-1.4px;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-    .hero-card img{
-        height:260px;
-    }
-
-    .hero-overlay{
-        left:20px;
-        right:20px;
-        bottom:20px;
-    }
-
-    .trust-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:17px;
-    }
-
-    section{
-        padding:55px 0;
-    }
-
-    .section-title h2{
-        font-size:29px;
-    }
-
-    .services,
-    .plans{
-        grid-template-columns:1fr;
-    }
-
-    .process{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .contact-box{
-        padding:22px;
-    }
-
-    .cta h2{
-        font-size:30px;
-    }
-
-    .floating-enquiry{
-        font-size:11px;
-        padding:15px 8px;
-    }
-
-    .whatsapp{
-        width:52px;
-        height:52px;
-        font-size:24px;
-        right:13px;
-        bottom:13px;
-    }
-}
-
+@media(max-width:600px){.grid3,.steps{grid-template-columns:1fr}.contact,.picker{padding:24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
-
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header>
-
-<div class="container nav">
-
+<div class="wrap nav">
 <a href="#home">
-
 <!-- DO NOT CHANGE THIS LOGO LINK -->
-<img
-src="./file_000000007c2c72468b6de3e43eb47c36.png"
-alt="PrimeGrow Services Logo"
-class="logo">
-
+<img src="./file_000000007c2c72468b6de3e43eb47c36.png" alt="PrimeGrow Services Logo" class="logo">
 </a>
-
-<button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
-☰
-</button>
-
-<nav id="mainNav">
-
-<a href="#home" onclick="closeMenu()">Home</a>
-<a href="#services" onclick="closeMenu()">Services</a>
-<a href="#plans" onclick="closeMenu()">Plans</a>
-<a href="#process" onclick="closeMenu()">Process</a>
-<a href="#contact" onclick="closeMenu()">Contact</a>
-
-<a
-class="nav-btn"
-href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20know%20about%20Real%20Estate%20Digital%20Marketing."
-target="_blank">
-WhatsApp
-</a>
-
+<button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav id="nav">
+<a href="#services">Services</a>
+<a href="#plans">Pricing</a>
+<a href="#finder">Find your plan</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+<a class="btn btn-p" href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20know%20about%20Real%20Estate%20Digital%20Marketing." target="_blank" rel="noopener">WhatsApp</a>
 </nav>
-
 </div>
-
 </header>
 
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-<div class="container hero-grid">
-
+<main>
+<section class="hero" id="home"><span class="blob b1"></span><span class="blob b2"></span>
+<div class="wrap hero-grid" style="position:relative;z-index:2">
 <div>
-
-<div class="badge reveal">
-REAL ESTATE DIGITAL MARKETING SPECIALISTS
+<span class="pill">Digital marketing built only for real estate</span>
+<h1>Turn property searches into <em>site visits</em>.</h1>
+<p class="lead">Website, social media, Google Business Profile, Meta and Google ads, and WhatsApp follow-up for builders, developers, brokers and channel partners, set up as one connected system.</p>
+<div class="cta-row">
+<a class="btn btn-p" href="#contact">Get a free audit</a>
+<a class="btn btn-g" href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20know%20about%20Real%20Estate%20Digital%20Marketing." target="_blank" rel="noopener">Chat on WhatsApp</a>
+<a class="btn btn-o" href="#plans">See pricing</a>
 </div>
-
-<h1 id="heroTitle"></h1>
-
-<p class="reveal">
-Real Estate Agents, Builders aur Property Consultants ke liye
-Website, Social Media, SEO, Google Business Profile,
-Paid Ads aur Lead Generation — ek hi agency se.
-</p>
-
-<div class="hero-buttons reveal">
-
-<button
-class="btn btn-primary"
-onclick="openPopup('Digital Marketing Enquiry')">
-🚀 Get Free Consultation
-</button>
-
-<a
-href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Real%20Estate%20Digital%20Marketing%20ke%20baare%20mein%20jaankari%20chahiye."
-target="_blank"
-class="btn btn-whatsapp">
-💬 WhatsApp Now
-</a>
-
+<p class="note">Entry plans from ₹2,999. No fixed lead or sales guarantees, only honest, trackable work.</p>
 </div>
-
+<div class="art">
+<svg viewBox="0 0 480 430" role="img" aria-label="Illustration of residential towers with a location pin">
+<defs>
+<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcd9ff"/><stop offset="1" stop-color="#f4f9ff"/></linearGradient>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b7cff"/><stop offset="1" stop-color="#06152e"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0757c8"/><stop offset="1" stop-color="#0a1f44"/></linearGradient>
+<pattern id="wd" width="22" height="26" patternUnits="userSpaceOnUse"><rect x="6" y="6" width="10" height="14" rx="2" fill="#fff" opacity=".16"/></pattern>
+<pattern id="wl" width="44" height="52" patternUnits="userSpaceOnUse"><rect x="6" y="6" width="10" height="14" rx="2" fill="#ffe08a"/><rect x="28" y="32" width="10" height="14" rx="2" fill="#ffe08a"/></pattern>
+<pattern id="wm" width="44" height="52" patternUnits="userSpaceOnUse"><rect x="28" y="6" width="10" height="14" rx="2" fill="#ffe08a"/><rect x="6" y="32" width="10" height="14" rx="2" fill="#ffe08a"/></pattern>
+</defs>
+<rect width="480" height="430" fill="url(#sk)"/>
+<circle cx="400" cy="72" r="38" fill="#fff" opacity=".85"/>
+<ellipse cx="90" cy="70" rx="46" ry="14" fill="#fff" opacity=".8"/><ellipse cx="120" cy="60" rx="30" ry="12" fill="#fff" opacity=".8"/>
+<g class="b" style="--d:.2s"><rect x="34" y="210" width="104" height="180" fill="url(#g2)"/><rect x="34" y="210" width="104" height="180" fill="url(#wd)"/><rect class="bl" x="34" y="210" width="104" height="180" fill="url(#wl)"/></g>
+<g class="b" style="--d:0s"><rect x="160" y="112" width="140" height="278" fill="url(#g1)"/><rect x="160" y="112" width="140" height="278" fill="url(#wd)"/><rect class="bl2" x="160" y="112" width="140" height="278" fill="url(#wm)"/><rect class="bl" x="160" y="112" width="140" height="278" fill="url(#wl)"/><rect x="214" y="352" width="32" height="38" rx="4" fill="#06152e"/></g>
+<g class="b" style="--d:.35s"><rect x="322" y="170" width="120" height="220" fill="url(#g2)"/><rect x="322" y="170" width="120" height="220" fill="url(#wd)"/><rect class="bl2" x="322" y="170" width="120" height="220" fill="url(#wm)"/></g>
+<g class="pin"><path d="M230 30c-15 0-26 11-26 25 0 18 26 40 26 40s26-22 26-40c0-14-11-25-26-25z" fill="#16a34a"/><circle cx="230" cy="55" r="9" fill="#fff"/></g>
+<rect y="388" width="480" height="42" fill="#06152e"/>
+<path class="road" d="M0 410H480" stroke="#fff" stroke-width="3" stroke-dasharray="14 12" opacity=".5"/>
+<circle cx="150" cy="378" r="14" fill="#16a34a"/><rect x="148" y="386" width="4" height="8" fill="#0b3b2a"/><circle cx="312" cy="380" r="11" fill="#22c55e"/>
+</svg>
+<div class="fc f1"><b>📍 Local search presence</b><span>Google Business Profile</span></div>
+<div class="fc f2"><b>💬 New enquiry</b><span>Lead arrives on WhatsApp</span></div>
+<div class="fc f3"><b>✅ Site visit scheduled</b><span>Followed up and tracked</span></div>
 </div>
-
-
-<div class="hero-card">
-
-<img
-src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=85"
-alt="Real Estate Digital Marketing">
-
-<div class="hero-overlay">
-
-<strong>Grow Your Real Estate Business Online</strong>
-
-<span>
-Build Trust • Generate Enquiries • Convert Leads
-</span>
-
 </div>
-
-</div>
-
-</div>
-
 </section>
 
+<div class="flow"><div class="wrap" aria-label="Buyer journey"><span class="chip" style="animation-delay:0s">Visibility</span><i>›</i><span class="chip" style="animation-delay:1s">Trust</span><i>›</i><span class="chip" style="animation-delay:2s">Enquiry</span><i>›</i><span class="chip" style="animation-delay:3s">Qualification</span><i>›</i><span class="chip" style="animation-delay:4s">Site visit</span><i>›</i><span class="chip" style="animation-delay:5s">Follow-up</span><i>›</i><span class="chip" style="animation-delay:6s">Booking</span></div></div>
 
-<!-- ================= TRUST ================= -->
-
-<div class="trust">
-
-<div class="container trust-grid">
-
-<div>
-<strong>360°</strong>
-<span>Digital Marketing</span>
-</div>
-
-<div>
-<strong>24/7</strong>
-<span>Online Presence</span>
-</div>
-
-<div>
-<strong>Local</strong>
-<span>Lead Targeting</span>
-</div>
-
-<div>
-<strong>ROI</strong>
-<span>Focused Strategy</span>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- ================= SERVICES ================= -->
+<div class="strip"><div class="wrap">
+<div><strong data-c="10">10</strong><span>real estate services</span></div>
+<div><strong>₹2,999</strong><span>entry price</span></div>
+<div><strong><span data-c="7">7</span> stages</strong><span>visibility to booking</span></div>
+<div><strong>Noida</strong><span>Sector 63 office</span></div>
+</div></div>
 
 <section id="services">
-
-<div class="container">
-
-<div class="section-title reveal">
-
-<div class="mini">What We Do</div>
-
-<h2>Real Estate Growth Services</h2>
-
-<p>
-Aapke property business ko professional online presence,
-visibility aur enquiry generation ke liye complete digital marketing solutions.
-</p>
-
+<div class="wrap">
+<div class="head"><h2>Services that cover the whole buyer journey</h2><p>Each service solves a specific problem. The risk line shows what usually goes wrong when it is missing or done badly.</p></div>
+<div class="grid3" id="svc"></div>
 </div>
-
-
-<div class="services">
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
-alt="Real Estate Website">
-
-<div class="service-content">
-
-<h3>🌐 Real Estate Website</h3>
-
-<p>
-Professional website jo aapke projects aur properties ko 24/7 present kare.
-</p>
-
-<ul>
-<li>Mobile Responsive</li>
-<li>Property Listing</li>
-<li>WhatsApp Enquiry</li>
-<li>Lead Form</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
-alt="Social Media Marketing">
-
-<div class="service-content">
-
-<h3>📱 Social Media Marketing</h3>
-
-<p>
-Facebook aur Instagram par professional property presence.
-</p>
-
-<ul>
-<li>Posts & Reels</li>
-<li>Content Planning</li>
-<li>Creative Designs</li>
-<li>Page Management</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80"
-alt="Google Business">
-
-<div class="service-content">
-
-<h3>📍 Google Business</h3>
-
-<p>
-Google Search aur Maps par local visibility improve karne ki strategy.
-</p>
-
-<ul>
-<li>Profile Optimization</li>
-<li>Category Optimization</li>
-<li>Local SEO</li>
-<li>Review Strategy</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-alt="Lead Generation">
-
-<div class="service-content">
-
-<h3>🎯 Lead Generation</h3>
-
-<p>
-Interested property buyers tak targeted advertising ke through reach.
-</p>
-
-<ul>
-<li>Meta Ads</li>
-<li>Lead Campaigns</li>
-<li>Audience Targeting</li>
-<li>Lead Tracking</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-alt="SEO">
-
-<div class="service-content">
-
-<h3>🔎 SEO & Local SEO</h3>
-
-<p>
-Search engines par long-term organic visibility build karna.
-</p>
-
-<ul>
-<li>Keyword Research</li>
-<li>On Page SEO</li>
-<li>Local SEO</li>
-<li>Content Strategy</li>
-</ul>
-
-</div>
-</div>
-
-
-<div class="service reveal">
-
-<img
-class="service-img"
-src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=800&q=80"
-alt="Google Facebook Ads">
-
-<div class="service-content">
-
-<h3>📈 Google & Meta Ads</h3>
-
-<p>
-Property campaigns ke liye conversion-focused paid advertising.
-</p>
-
-<ul>
-<li>Campaign Setup</li>
-<li>Audience Targeting</li>
-<li>Retargeting</li>
-<li>Performance Tracking</li>
-</ul>
-
-</div>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- ================= PRICING ================= -->
+<section id="showcase" style="background:#fff">
+<div class="wrap">
+<div class="head"><h2>See how it looks in action</h2><p>A property post people stop to read, and a simple view of where every lead stands. Illustrative samples.</p></div>
+<div class="show">
+<div class="phone"><svg viewBox="0 0 220 400" role="img" aria-label="Sample Instagram property post">
+<rect x="2" y="2" width="216" height="396" rx="32" fill="#06152e"/><rect x="12" y="14" width="196" height="372" rx="24" fill="#fff"/>
+<circle cx="34" cy="42" r="12" fill="#0757c8"/><rect x="54" y="33" width="80" height="7" rx="3" fill="#172033"/><rect x="54" y="45" width="50" height="5" rx="2" fill="#9db0cc"/>
+<rect x="22" y="64" width="176" height="150" rx="12" fill="url(#g1)"/>
+<rect x="60" y="100" width="40" height="114" fill="#fff" opacity=".25"/><rect x="108" y="82" width="46" height="132" fill="#fff" opacity=".4"/><rect x="160" y="124" width="28" height="90" fill="#fff" opacity=".2"/>
+<circle cx="110" cy="140" r="20" fill="#fff" opacity=".9"/><path d="M104 129l18 11-18 11z" fill="#0757c8"/>
+<path d="M30 238c-6-6-12-12-6-17 4-3 8 0 6 4 2-4 6-7 10-4 5 5-1 11-10 17z" fill="#dc2626"/><circle cx="60" cy="232" r="7" fill="none" stroke="#172033" stroke-width="2"/><path d="M82 226l16 6-16 6z" fill="none" stroke="#172033" stroke-width="2"/>
+<rect x="22" y="256" width="150" height="8" rx="4" fill="#172033"/><rect x="22" y="272" width="176" height="6" rx="3" fill="#cfd9e8"/><rect x="22" y="284" width="120" height="6" rx="3" fill="#cfd9e8"/>
+<rect x="22" y="312" width="176" height="36" rx="10" fill="#16a34a"/><rect x="62" y="326" width="96" height="8" rx="4" fill="#fff"/>
+</svg></div>
+<div class="dash"><svg viewBox="0 0 460 300" role="img" aria-label="Sample lead tracking dashboard">
+<rect x="2" y="2" width="456" height="296" rx="20" fill="#fff" stroke="#dfe8f4"/>
+<rect x="24" y="24" width="150" height="10" rx="5" fill="#06152e"/><rect x="24" y="42" width="100" height="6" rx="3" fill="#9db0cc"/>
+<rect x="24" y="68" width="200" height="14" rx="7" fill="#e4efff"/><rect class="bar" x="24" y="68" width="200" height="14" rx="7" fill="#0b7cff"/>
+<rect x="24" y="94" width="200" height="14" rx="7" fill="#e4efff"/><rect class="bar" style="animation-delay:.15s" x="24" y="94" width="150" height="14" rx="7" fill="#0b7cff"/>
+<rect x="24" y="120" width="200" height="14" rx="7" fill="#e4efff"/><rect class="bar" style="animation-delay:.3s" x="24" y="120" width="105" height="14" rx="7" fill="#0757c8"/>
+<rect x="24" y="146" width="200" height="14" rx="7" fill="#e4efff"/><rect class="bar" style="animation-delay:.45s" x="24" y="146" width="62" height="14" rx="7" fill="#16a34a"/>
+<text x="24" y="182" font-size="11" fill="#5b6b82" font-family="Inter,Arial">Enquiry → Contact → Site visit → Booking</text>
+<rect x="250" y="24" width="186" height="140" rx="14" fill="#f5f9ff"/>
+<path class="line" d="M262 148L296 120 328 132 362 88 396 98 424 52" fill="none" stroke="#0757c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="424" cy="52" r="6" fill="#16a34a"/>
+<rect x="24" y="200" width="124" height="76" rx="14" fill="#e4efff"/><rect x="168" y="200" width="124" height="76" rx="14" fill="#e6f6ec"/><rect x="312" y="200" width="124" height="76" rx="14" fill="#fff3e8"/>
+<text x="40" y="232" font-size="12" font-weight="700" fill="#0757c8" font-family="Inter,Arial">Lead source</text><text x="40" y="254" font-size="11" fill="#5b6b82" font-family="Inter,Arial">Meta, Google, GBP</text>
+<text x="184" y="232" font-size="12" font-weight="700" fill="#15803d" font-family="Inter,Arial">Lead status</text><text x="184" y="254" font-size="11" fill="#5b6b82" font-family="Inter,Arial">Owner + follow-up</text>
+<text x="328" y="232" font-size="12" font-weight="700" fill="#c2410c" font-family="Inter,Arial">Monthly report</text><text x="328" y="254" font-size="11" fill="#5b6b82" font-family="Inter,Arial">What to improve</text>
+</svg></div>
+</div>
+</div>
+</section>
 
 <section class="pricing" id="plans">
-
-<div class="container">
-
-<div class="section-title reveal">
-
-<div class="mini">Simple Pricing</div>
-
-<h2>Choose Your Growth Plan</h2>
-
-<p>
-Apne current business stage ke according plan choose karein.
-</p>
-
+<div class="wrap">
+<div class="head"><h2>Clear pricing, no surprises</h2><p>Pick a category. Ad and media budgets are always separate from PrimeGrow fees.</p></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="plans" id="plansBox"></div>
+<p class="fine" id="planNote"></p>
 </div>
-
-
-<div class="plans">
-
-<div class="plan reveal">
-
-<h3>Starter</h3>
-
-<div class="price">
-₹2,999 <small>/month</small>
-</div>
-
-<ul>
-<li>Social Media Management</li>
-<li>8 Professional Posts</li>
-<li>4 Reels / Month</li>
-<li>Basic Content Strategy</li>
-<li>Facebook & Instagram Setup</li>
-<li>Monthly Performance Report</li>
-</ul>
-
-<button
-class="btn btn-primary"
-onclick="openPopup('Starter Plan')">
-Get Started
-</button>
-
-</div>
-
-
-<div class="plan popular reveal">
-
-<div class="popular-tag">
-POPULAR
-</div>
-
-<h3>Growth</h3>
-
-<div class="price">
-₹4,999 <small>/month</small>
-</div>
-
-<ul>
-<li>Social Media Management</li>
-<li>12 Professional Posts</li>
-<li>8 Reels / Month</li>
-<li>Google Business Optimization</li>
-<li>Lead Generation Strategy</li>
-<li>Monthly Performance Report</li>
-</ul>
-
-<button
-class="btn btn-primary"
-onclick="openPopup('Growth Plan')">
-Get Started
-</button>
-
-</div>
-
-
-<div class="plan reveal">
-
-<h3>Premium</h3>
-
-<div class="price">
-₹7,999 <small>/month</small>
-</div>
-
-<ul>
-<li>Complete Social Media Management</li>
-<li>20 Posts / Month</li>
-<li>12 Reels / Month</li>
-<li>Google Business + Local SEO</li>
-<li>Lead Generation Campaign</li>
-<li>Advanced Growth Strategy</li>
-</ul>
-
-<button
-class="btn btn-primary"
-onclick="openPopup('Premium Plan')">
-Get Started
-</button>
-
-</div>
-
-</div>
-
-<p style="text-align:center;font-size:11px;color:#718096;margin-top:15px;font-weight:600;">
-*Advertising budget, domain, hosting and third-party charges are separate where applicable.
-</p>
-
-</div>
-
 </section>
 
-
-<!-- ================= WEBSITE BENEFITS ================= -->
-
-<section id="website">
-
-<div class="container">
-
-<div class="section-title reveal">
-
-<div class="mini">
-Website Development
-</div>
-
-<h2>
-Professional Real Estate Website
-</h2>
-
-<p>
-Aapki property ko sirf social media post nahi — ek professional digital identity chahiye.
-</p>
-
-</div>
-
-
-<div class="why-grid">
-
-<div class="why-card gain reveal">
-
-<h3>
-✓ Website se kya benefit?
-</h3>
-
-<p>
-Professional image, property showcase, Google visibility,
-WhatsApp enquiries, lead forms, project details aur
-24/7 online presence.
-</p>
-
-<br>
-
-<p>
-<strong>
-Website Starting From ₹2,999*
-</strong>
-</p>
-
-<br>
-
-<button
-class="btn btn-primary"
-onclick="openPopup('Website Development')">
-Get Website Enquiry
-</button>
-
-</div>
-
-
-<div class="why-card loss reveal">
-
-<h3>
-⚠ Website na hone ka potential loss
-</h3>
-
-<p>
-Customer ko proper information nahi milti, trust kam ho sakta hai,
-competitors ke paas enquiry ja sakti hai aur paid advertising
-ka traffic effectively convert nahi ho pata.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= PROCESS ================= -->
-
-<section
-id="process"
-class="process-section">
-
-<div class="container">
-
-<div class="section-title reveal">
-
-<div class="mini">
-Our Process
-</div>
-
-<h2>
-From Visibility To Leads
-</h2>
-
-<p>
-Simple process ke through aapke real estate business ko online growth system mein convert karte hain.
-</p>
-
-</div>
-
-
-<div class="process">
-
-<div class="step reveal">
-
-<div class="step-number">01</div>
-
-<h3>Business Analysis</h3>
-
-<p>
-Aapke business, location, property aur target audience ko samajhna.
-</p>
-
-</div>
-
-
-<div class="step reveal">
-
-<div class="step-number">02</div>
-
-<h3>Digital Setup</h3>
-
-<p>
-Website, social media aur Google presence ko professionally setup karna.
-</p>
-
-</div>
-
-
-<div class="step reveal">
-
-<div class="step-number">03</div>
-
-<h3>Marketing</h3>
-
-<p>
-Content, SEO aur paid advertising ke through targeted audience tak reach.
-</p>
-
-</div>
-
-
-<div class="step reveal">
-
-<div class="step-number">04</div>
-
-<h3>Leads & Growth</h3>
-
-<p>
-Enquiries track karke better conversion aur continuous growth par focus.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-Ready To Grow Your Real Estate Business?
-</h2>
-
-<p>
-Aaj hi apni free digital marketing consultation book karein.
-</p>
-
-<button
-class="btn btn-whatsapp"
-onclick="openPopup('Free Consultation')">
-🚀 Get Free Consultation
-</button>
-
-</div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact-section" id="contact">
-
-<div class="container">
-
-<div class="contact-box reveal">
-
-<div class="contact-info">
-
-<div class="mini">Contact PrimeGrow</div>
-
-<h3>Let's Grow Your Business</h3>
-
-<p>
-Real estate agents, builders, property consultants aur developers
-ke liye professional digital marketing solutions.
-</p>
-
-<div class="contact-item">
-📞 Phone:
-<span>9911513666</span>
-</div>
-
-<div class="contact-item">
-💬 WhatsApp:
-<span>Available for Enquiries</span>
-</div>
-
-<div class="contact-item">
-📍 Address:
-<span>Village Bhowapur, Kaushambi Road, Near EDM Mall, Ghaziabad, UP 201010</span>
-</div>
-
-</div>
-
-
+<section id="finder">
+<div class="wrap">
+<div class="picker">
 <div>
-
-<h3 style="font-family:Poppins;font-size:25px;color:#06152e;margin-bottom:15px;">
-Start Your Enquiry
-</h3>
-
-<p style="font-size:13px;color:#64748b;font-weight:600;margin-bottom:18px;">
-Apni requirement batayein. Hamari team aapse contact karegi.
-</p>
-
-<button
-class="btn btn-primary"
-style="width:100%;"
-onclick="openPopup('Contact Enquiry')">
-📩 Send Enquiry
-</button>
-
-<br><br>
-
-<a
-class="btn btn-whatsapp"
-style="width:100%;"
-href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Digital%20Marketing%20services%20ke%20baare%20mein%20jaankari%20chahiye."
-target="_blank">
-💬 Chat On WhatsApp
-</a>
-
+<h2 style="font-size:30px;margin-bottom:8px">Not sure where to start?</h2>
+<p style="color:var(--muted)">Tell us who you are. We suggest the smallest package that fits, and you upgrade only when you need to.</p>
+<label for="who" style="display:block;margin-top:18px;font-weight:600;font-size:14px">I am a</label>
+<select id="who"></select>
 </div>
-
+<div class="result" id="res" aria-live="polite"></div>
 </div>
-
 </div>
-
 </section>
 
+<section style="background:#fff">
+<div class="wrap">
+<div class="head center" style="text-align:center"><h2>What changes when marketing is done right</h2><p>Think of it as opportunity cost, not fear. Here is the difference.</p></div>
+<div class="two">
+<div class="card gain"><h3 style="color:#15803d">With a proper setup</h3>
+<ul><li>Buyers find you in local and project searches</li><li>A professional site and profiles build trust before the first call</li><li>Ad traffic lands on a page made to convert</li><li>Every lead gets a fast, organised reply</li><li>You see enquiry → site visit → booking by source</li></ul></div>
+<div class="card loss"><h3 style="color:var(--red)">Without it</h3>
+<ul><li>Active buyers may see competitors first</li><li>A weak website or inactive page weakens first impressions</li><li>Paid traffic on a weak page gives fewer enquiries</li><li>Slow follow-up lets interested leads go cold</li><li>No tracking means unclear source of enquiries and sales</li></ul></div>
+</div>
+</div>
+</section>
 
-<!-- ================= FOOTER ================= -->
+<section class="process" id="process" style="background:var(--bg)">
+<div class="wrap">
+<div class="head"><h2>How we work with you</h2><p>A simple flow from first call to long-term growth.</p></div>
+<div class="steps">
+<div class="step"><h3>Call and need check</h3><p>We understand your project, ticket size, target location and current setup.</p></div>
+<div class="step"><h3>Right service</h3><p>We identify the real gap first, then suggest the smallest suitable package.</p></div>
+<div class="step"><h3>Package on WhatsApp</h3><p>You get scope, price and examples in writing. Final scope is confirmed before we start.</p></div>
+<div class="step"><h3>Demo or audit</h3><p>We review your website, profiles and ads, and show where improvements will matter.</p></div>
+<div class="step"><h3>Launch</h3><p>Website, profiles, content and campaigns go live with tracking in place.</p></div>
+<div class="step"><h3>Qualify leads</h3><p>We help filter by budget, location and intent so your team talks to serious buyers.</p></div>
+<div class="step"><h3>Follow-up</h3><p>A clear follow-up schedule and lead status keep enquiries from going cold.</p></div>
+<div class="step"><h3>Monthly report</h3><p>You see what worked, what did not, and what to change next.</p></div>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap" style="max-width:820px">
+<div class="head"><h2>Questions we hear often</h2></div>
+<details><summary>Do you guarantee leads or bookings?</summary><p>No. Fixed lead or sales guarantees are not honest in genuine marketing. Results depend on property, location, price, offer, audience, creative, ad budget and how fast your team follows up. We set realistic expectations and track everything.</p></details>
+<details><summary>Is ad budget included in your fees?</summary><p>No. Media and ad budget is paid separately to Meta or Google. PrimeGrow fees cover setup, strategy, optimisation and reporting as listed in each plan.</p></details>
+<details><summary>I already have an agency. Can you still help?</summary><p>Yes. We can give a second opinion, run an audit, or take over one specific service such as Google Business Profile or lead follow-up.</p></details>
+<details><summary>My budget is small. Where do I start?</summary><p>Entry plans start at ₹2,999. Begin with the basic requirement, see the response, then upgrade step by step.</p></details>
+<details><summary>Do I need every service?</summary><p>No. We do not sell everything at once. We find the problem first and recommend the smallest package that solves it.</p></details>
+</div>
+</section>
+
+<div class="cta">
+<div class="wrap">
+<h2>Send your project details, get a plan</h2>
+<p>Share the property name and location on WhatsApp. We reply with a suitable package and examples.</p>
+<a class="btn btn-g" href="https://wa.me/919911513666?text=REAL%20ESTATE" target="_blank" rel="noopener">Message “REAL ESTATE” on WhatsApp</a>
+</div>
+</div>
+
+<section id="contact">
+<div class="wrap">
+<div class="contact">
+<div>
+<h2>Talk to PrimeGrow</h2>
+<p>Fill in the form and your message opens in WhatsApp, ready to send. We reply with package details and a short audit plan.</p>
+<div class="ci"><b>Call / WhatsApp:</b> <a href="tel:+919911513666">9911513666</a></div>
+<div class="ci"><b>Address:</b> Chajarsi, Sector 63, Noida</div>
+<div class="ci"><b>Best for:</b> Builders, developers, brokers, channel partners, consultants</div>
+</div>
+<form id="lead">
+<div class="f"><label for="n">Your name</label><input id="n" required></div>
+<div class="f"><label for="p">Project / business name and location</label><input id="p" required></div>
+<div class="f"><label for="t">Service needed</label>
+<select id="t"><option>Website</option><option>Social Media Management</option><option>Google Business Profile / Local SEO</option><option>Meta / Google Ads</option><option>SEO</option><option>Complete Real Estate Package</option><option>Not sure, need advice</option></select></div>
+<div class="f"><label for="m">Message (optional)</label><textarea id="m" placeholder="Property type, target location, current ad budget..."></textarea></div>
+<button class="btn btn-p" type="submit" style="width:100%">Send on WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+</main>
 
 <footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>PrimeGrow Services</h3>
-
-<p>
-Real Estate Digital Marketing Agency providing Website,
-Social Media, SEO, Google Business, Paid Ads and Lead Generation solutions.
-</p>
-
-<p>
-📞 9911513666
-</p>
-
+<div class="wrap">
+<div class="fg">
+<div><h3>PrimeGrow Services</h3><p>Real estate digital marketing partner. Visibility, trust, enquiry, qualification, site visit, follow-up and booking, in one connected setup.</p></div>
+<div><h3>Explore</h3><a href="#services">Services</a><a href="#plans">Pricing</a><a href="#process">Process</a><a href="#faq">FAQ</a></div>
+<div><h3>Contact</h3><a href="tel:+919911513666">9911513666</a><a href="https://wa.me/919911513666" target="_blank" rel="noopener">WhatsApp</a><p>Chajarsi, Sector 63, Noida</p></div>
 </div>
-
-
-<div>
-
-<h3>Quick Links</h3>
-
-<p><a href="#home">Home</a></p>
-<p><a href="#services">Services</a></p>
-<p><a href="#plans">Plans</a></p>
-<p><a href="#process">Process</a></p>
-<p><a href="#contact">Contact</a></p>
-
+<div class="copy">© <span id="yr"></span> PrimeGrow Services. Results vary by project, market, budget and follow-up. No guaranteed sales or lead counts.</div>
 </div>
-
-
-<div>
-
-<h3>Services</h3>
-
-<p><a href="#services">Website Designing</a></p>
-<p><a href="#services">Social Media Marketing</a></p>
-<p><a href="#services">Google Business</a></p>
-<p><a href="#services">Lead Generation</a></p>
-<p><a href="#services">SEO & Local SEO</a></p>
-
-</div>
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 PrimeGrow Services. All Rights Reserved.
-
-</div>
-
-</div>
-
 </footer>
 
-
-<!-- ================= FLOATING ENQUIRY ================= -->
-
-<div
-class="floating-enquiry"
-onclick="openPopup('Quick Enquiry')">
-
-📩 ENQUIRE NOW
-
-</div>
-
-
-<!-- ================= WHATSAPP ================= -->
-
-<a
-class="whatsapp"
-href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Real%20Estate%20Digital%20Marketing%20services%20ke%20baare%20mein%20jaankari%20chahiye."
-target="_blank"
-aria-label="WhatsApp">
-
-💬
-
-</a>
-
-
-<!-- ================= POPUP ================= -->
-
-<div
-class="popup"
-id="enquiryPopup"
-onclick="outsidePopup(event)">
-
-<div class="popup-box">
-
-<button
-class="close"
-onclick="closePopup()">
-×
-</button>
-
-<h2>Get In Touch</h2>
-
-<p>
-Apni requirement share karein. PrimeGrow Services team aapse contact karegi.
-</p>
-
-<div
-class="selected-plan"
-id="selectedPlan">
-General Enquiry
-</div>
-
-<form onsubmit="submitEnquiry(event)">
-
-<div class="form-group">
-
-<label>Your Name *</label>
-
-<input
-type="text"
-id="name"
-placeholder="Enter your name"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Mobile Number *</label>
-
-<input
-type="tel"
-id="phone"
-placeholder="Enter 10 digit mobile number"
-pattern="[0-9]{10}"
-maxlength="10"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Business Type</label>
-
-<select id="business">
-
-<option value="Real Estate Agent">
-Real Estate Agent
-</option>
-
-<option value="Builder / Developer">
-Builder / Developer
-</option>
-
-<option value="Property Consultant">
-Property Consultant
-</option>
-
-<option value="Other Business">
-Other Business
-</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Service Required</label>
-
-<select id="service">
-
-<option value="Social Media Marketing">
-Social Media Marketing
-</option>
-
-<option value="Website Development">
-Website Development
-</option>
-
-<option value="Google Business / Local SEO">
-Google Business / Local SEO
-</option>
-
-<option value="Lead Generation">
-Lead Generation
-</option>
-
-<option value="SEO">
-SEO
-</option>
-
-<option value="Google & Meta Ads">
-Google & Meta Ads
-</option>
-
-<option value="Complete Digital Marketing">
-Complete Digital Marketing
-</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Message</label>
-
-<textarea
-id="message"
-placeholder="Tell us about your requirement"></textarea>
-
-</div>
-
-
-<button
-type="submit"
-class="btn btn-primary"
-style="width:100%;">
-
-🚀 Send Enquiry on WhatsApp
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-
-<!-- ================= JAVASCRIPT ================= -->
+<a class="wa" href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20know%20about%20Real%20Estate%20Digital%20Marketing." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
 
 <script>
+const WA="919911513666";
+const S=[
+["🌐","Real Estate Website","Project details, gallery, location, amenities, enquiry form, WhatsApp and call buttons. Your 24×7 digital sales office.","Weak presentation creates a trust gap and wastes paid traffic."],
+["📱","Social Media Management","Planned Facebook and Instagram posts, reels, FAQs, location benefits and testimonials.","An inactive page lowers trust and weakens brand recall."],
+["📍","Google Business Profile / Local SEO","Category, services, photos, updates and review strategy so local buyers can call, message and get directions.","Incomplete details add friction and competitors look stronger."],
+["📣","Meta Ads","Facebook and Instagram campaigns for a specific project, location, audience and offer.","Poor targeting wastes budget and weak qualification brings low-intent leads."],
+["🔎","Google Ads","Search ads shown to people actively searching for properties in your location.","You miss active searchers while competitors take high-intent traffic."],
+["📈","SEO","Content, structure, local relevance and technical fixes for long-term organic visibility.","Research-stage buyers find competitors with stronger rankings."],
+["🎯","Lead Gen and Landing Pages","One offer, one simple enquiry path, with budget and location questions to qualify buyers.","Clicks without enquiries, and incomplete or low-quality leads."],
+["💬","WhatsApp Follow-up","Move prospects into WhatsApp for brochures, qualification and quick follow-up.","Slow replies make leads cold and chats get scattered."],
+["🎬","Property Video / Reels","Walkthroughs, amenities, location videos, FAQs and construction updates.","Static-only content is weak and competitor videos win attention."],
+["🗂️","Lead Management / CRM","Track every lead by status, owner, follow-up, site visit and outcome.","Leads get lost in sheets and chats, and the source-to-sale picture stays unclear."]];
+const A='fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"';
+const G=['<rect x="6" y="10" width="36" height="28" rx="4"/><path d="M6 18h36"/>','<rect x="14" y="6" width="20" height="36" rx="4"/><path d="M19 16h10M19 22h10"/>','<path d="M24 42S12 30 12 21a12 12 0 0124 0c0 9-12 21-12 21z"/><circle cx="24" cy="21" r="4"/>','<path d="M8 20v8l22 8V12L8 20z"/><path d="M36 20a5 5 0 010 8"/>','<circle cx="21" cy="21" r="12"/><path d="M30 30l11 11"/>','<path d="M8 38l10-12 8 6 14-18"/><path d="M32 14h8v8"/>','<circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="1"/>','<path d="M8 10h32v22H20l-8 8v-8H8z"/>','<rect x="6" y="10" width="36" height="28" rx="5"/><path d="M20 18l12 6-12 6z"/>','<rect x="10" y="8" width="28" height="34" rx="4"/><path d="M17 18h14M17 25h14M17 32h8"/>'];
+document.getElementById("svc").innerHTML=S.map((s,i)=>`<div class="card sc"><div class="ban" style="background:linear-gradient(135deg,hsl(${205+i*8} 90% 42%),hsl(${220+i*8} 85% 22%))"><svg viewBox="0 0 48 48" ${A}>${G[i]}</svg></div><div class="sb"><h3>${s[1]}</h3><p>${s[2]}</p><small>Risk if missing: ${s[3]}</small></div></div>`).join("");
 
-/* ================= HERO TEXT ANIMATION ================= */
-
-const heroText = [
-    "Grow Your Real Estate Business",
-    "Get More Property Enquiries"
-];
-
-const heroTitle = document.getElementById("heroTitle");
-
-let titleIndex = 0;
-
-function showHeroTitle(){
-
-    heroTitle.innerHTML = "";
-
-    const words = heroText[titleIndex].split(" ");
-
-    words.forEach((word,index)=>{
-
-        const span = document.createElement("span");
-
-        span.className = "word";
-
-        span.textContent = word;
-
-        span.style.animationDelay = (index * 0.08) + "s";
-
-        heroTitle.appendChild(span);
-
-    });
-
-    const lastWord = heroTitle.lastElementChild;
-
-    if(lastWord){
-        lastWord.style.color = "#0757c8";
-    }
-
-    titleIndex = (titleIndex + 1) % heroText.length;
+const P={
+"Website":{n:"One-time prices.",p:[["Basic","₹2,999","","1-page website, project details, WhatsApp + call, enquiry form, mobile responsive, basic SEO."],["Professional","₹4,999","pop","5–7 pages, gallery, map, enquiry form, WhatsApp, basic SEO, social integration."],["Premium","₹7,999","","Multi-page site, multiple projects, advanced enquiry flow, analytics, Search Console setup, 1-year support."]]},
+"Social Media":{n:"Per month. Ad spend separate.",p:[["Starter","₹2,999","/month","Facebook + Instagram, 12 posts, 4 reels, captions and hashtags."],["Professional","₹4,999","/month pop","16 posts, 8 reels, creatives, captions, hashtags, optimisation, monthly report."],["Premium","₹7,999","/month","20 posts, 12 reels, creative and video editing, lead-focused content, optimisation, monthly report."]]},
+"Google Profile":{n:"One-time for Basic and Professional; Premium is a managed plan.",p:[["Basic","₹2,999","","Profile, category, services, business information, photo optimisation."],["Professional","₹4,999","pop","Complete optimisation, local SEO, keywords, posts, review strategy, competitor analysis."],["Premium","₹7,999","","Local SEO, weekly posts, review strategy, local keywords, competitor tracking, monthly report."]]},
+"Ads":{n:"Media and ad budget is separate from PrimeGrow fees.",p:[["Meta Campaign Setup","₹3,999","","Facebook/Instagram campaign structure, audience strategy, creative setup, lead campaign configuration."],["Google Ads Setup","₹3,999","pop","Search campaign structure, keywords, ad copy, conversion-oriented setup, basic optimisation."],["Custom","On discussion","","Landing page, retargeting, multiple campaigns, CRM/WhatsApp flow, reporting."]]},
+"SEO":{n:"Per month.",p:[["Basic","₹4,999","/month","Keyword research, on-page SEO, basic local SEO, reporting."],["Professional","₹7,999","/month pop","On-page + local SEO, keyword optimisation, content strategy, GBP support, monthly report."]]},
+"Complete":{n:"Ad budget separate. Final scope is confirmed before starting.",p:[["Complete Package","₹9,999","/month pop","Website management, Facebook + Instagram (12 posts, 4 reels), Google Business Profile, local SEO, lead-generation campaign setup, WhatsApp integration, monthly report."]]}
+};
+const tabs=document.getElementById("tabs"),box=document.getElementById("plansBox"),note=document.getElementById("planNote");
+function show(k){
+ [...tabs.children].forEach(b=>b.setAttribute("aria-selected",b.dataset.k===k));
+ box.innerHTML=P[k].p.map(x=>{const pop=x[2].includes("pop"),per=x[2].replace("pop","").trim();
+ return `<div class="plan${pop?" pop":""}">${pop?'<span class="tag">Popular</span>':""}<h3>${x[0]}</h3><div class="price">${x[1]}<small>${per}</small></div><p>${x[3]}</p><a class="btn ${pop?"btn-p":"btn-o"}" href="https://wa.me/${WA}?text=${encodeURIComponent("Hello PrimeGrow, I am interested in "+k+" - "+x[0]+" ("+x[1]+per+")")}" target="_blank" rel="noopener">Choose this plan</a></div>`}).join("");
+ note.textContent=P[k].n;
 }
-
-showHeroTitle();
-
-setInterval(showHeroTitle,5000);
-
-
-/* ================= MOBILE MENU ================= */
-
-function toggleMenu(){
-
-    const nav = document.getElementById("mainNav");
-
-    nav.classList.toggle("mobile-open");
-
-}
-
-function closeMenu(){
-
-    const nav = document.getElementById("mainNav");
-
-    nav.classList.remove("mobile-open");
-
-}
-
-
-/* ================= POPUP ================= */
-
-function openPopup(plan){
-
-    const popup = document.getElementById("enquiryPopup");
-
-    const selected = document.getElementById("selectedPlan");
-
-    selected.textContent = "Selected: " + plan;
-
-    popup.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-
-}
-
-
-function closePopup(){
-
-    const popup = document.getElementById("enquiryPopup");
-
-    popup.classList.remove("active");
-
-    document.body.style.overflow = "";
-
-}
-
-
-function outsidePopup(event){
-
-    if(event.target.id === "enquiryPopup"){
-
-        closePopup();
-
-    }
-
-}
-
-
-/* ESC KEY CLOSE */
-
-document.addEventListener("keydown",function(event){
-
-    if(event.key === "Escape"){
-
-        closePopup();
-
-    }
-
-});
-
-
-/* ================= FORM SUBMIT ================= */
-
-function submitEnquiry(event){
-
-    event.preventDefault();
-
-    const name =
-        document.getElementById("name").value.trim();
-
-    const phone =
-        document.getElementById("phone").value.trim();
-
-    const business =
-        document.getElementById("business").value;
-
-    const service =
-        document.getElementById("service").value;
-
-    const message =
-        document.getElementById("message").value.trim();
-
-    const selected =
-        document.getElementById("selectedPlan").textContent;
-
-    const text =
-        "Hello PrimeGrow Services,%0A%0A" +
-
-        "I want to enquire about your services.%0A%0A" +
-
-        "Name: " + encodeURIComponent(name) + "%0A" +
-
-        "Mobile: " + encodeURIComponent(phone) + "%0A" +
-
-        "Business: " + encodeURIComponent(business) + "%0A" +
-
-        "Service: " + encodeURIComponent(service) + "%0A" +
-
-        "Plan/Enquiry: " + encodeURIComponent(selected) + "%0A" +
-
-        "Message: " + encodeURIComponent(message);
-
-    const whatsappURL =
-        "https://wa.me/919911513666?text=" + text;
-
-    window.open(
-        whatsappURL,
-        "_blank"
-    );
-
-    closePopup();
-
-}
-
-
-/* ================= SCROLL REVEAL ================= */
-
-function revealElements(){
-
-    const elements =
-        document.querySelectorAll(".reveal");
-
-    const windowHeight =
-        window.innerHeight;
-
-    elements.forEach(element => {
-
-        const position =
-            element.getBoundingClientRect().top;
-
-        if(position < windowHeight - 60){
-
-            element.classList.add("show");
-
-        }
-
-    });
-
-}
-
-window.addEventListener(
-    "scroll",
-    revealElements
-);
-
-window.addEventListener(
-    "load",
-    revealElements
-);
-
-
-/* ================= CLOSE MOBILE MENU ON SCROLL ================= */
-
-window.addEventListener("scroll",function(){
-
-    closeMenu();
-
-});
-
+Object.keys(P).forEach((k,i)=>{const b=document.createElement("button");b.className="tab";b.textContent=k;b.dataset.k=k;b.setAttribute("role","tab");b.onclick=()=>show(k);tabs.appendChild(b)});
+show("Website");
+
+const R={
+"New broker / small dealer":["Website Basic + Social Starter + GBP Basic","Basic credibility and visibility to start with."],
+"Established broker":["Website Professional + Social Professional + GBP Professional","A stronger presentation and local presence."],
+"Builder / new project":["Website Premium + Social Premium + Lead Gen + Ads","A full project funnel built for enquiry generation."],
+"Already getting leads":["Landing page + WhatsApp follow-up + Lead Management + Ads optimisation","Improves conversion and follow-up on the leads you already have."],
+"Looking for long-term local growth":["Website + GBP Premium + SEO Professional + Social","Organic and local visibility plus steady content."]};
+const who=document.getElementById("who"),res=document.getElementById("res");
+Object.keys(R).forEach(k=>who.add(new Option(k,k)));
+function rec(){const r=R[who.value];res.innerHTML=`<h3>${who.value}</h3><div class="stack">${r[0]}</div><p>${r[1]}</p><a class="btn btn-g" style="margin-top:14px" href="https://wa.me/${WA}?text=${encodeURIComponent("Hello PrimeGrow, I am a "+who.value+". Please share the suggested package: "+r[0])}" target="_blank" rel="noopener">Get this package on WhatsApp</a>`}
+who.onchange=rec;rec();
+
+document.getElementById("lead").onsubmit=e=>{e.preventDefault();
+ const t="Hello PrimeGrow Services,%0AName: "+encodeURIComponent(n.value)+"%0AProject/Business: "+encodeURIComponent(p.value)+"%0AService: "+encodeURIComponent(t_.value)+"%0AMessage: "+encodeURIComponent(m.value||"-");
+ window.open("https://wa.me/"+WA+"?text="+t,"_blank")};
+const t_=document.getElementById("t");
+const nav=document.getElementById("nav"),mb=document.getElementById("menuBtn");
+mb.onclick=()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");mb.setAttribute("aria-expanded",false)}));
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.querySelectorAll("[data-c]").forEach(el=>{const t=+el.dataset.c;let v=0;el.textContent=0;const id=setInterval(()=>{el.textContent=++v;if(v>=t)clearInterval(id)},90)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".sc,.step,details,.head,.picker,.contact,.two .card,.phone,.dash").forEach((el,i)=>{el.classList.add("rv");el.style.transitionDelay=(i%3)*90+"ms";io.observe(el)});
 </script>
-
 </body>
 </html>
