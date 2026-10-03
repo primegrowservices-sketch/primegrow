@@ -12,7 +12,7 @@ content="PrimeGrow Services provides professional digital marketing services for
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -28,22 +28,26 @@ html{
 
 body{
     font-family:Inter,Arial,sans-serif;
-    background:#f7faff;
+    background:#f5f9ff;
     color:#172033;
-    line-height:1.45;
+    line-height:1.5;
     overflow-x:hidden;
 }
 
 :root{
     --blue:#0757c8;
-    --dark:#07152d;
+    --blue2:#0b7cff;
+    --dark:#06152e;
     --green:#16a34a;
-    --light:#eef5ff;
+    --red:#dc2626;
+    --light:#edf5ff;
     --white:#ffffff;
+    --text:#172033;
+    --muted:#5f6f85;
 }
 
 .container{
-    width:min(1120px,92%);
+    width:min(1160px,92%);
     margin:auto;
 }
 
@@ -52,80 +56,131 @@ body{
 header{
     position:sticky;
     top:0;
-    z-index:1000;
-    background:rgba(255,255,255,.97);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid #e7edf5;
+    z-index:2000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #e3eaf3;
+    box-shadow:0 3px 18px rgba(0,30,80,.05);
 }
 
 .nav{
-    min-height:65px;
+    min-height:72px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
 .logo{
-    width:190px;
-    max-height:58px;
+    width:195px;
+    max-height:60px;
     object-fit:contain;
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:22px;
 }
 
 nav a{
     text-decoration:none;
     color:#172033;
-    font-size:13px;
-    font-weight:700;
+    font-size:14px;
+    font-weight:800;
+    transition:.25s;
+}
+
+nav a:hover{
+    color:var(--blue);
 }
 
 .nav-btn{
     background:var(--blue);
     color:white!important;
-    padding:10px 16px;
-    border-radius:8px;
+    padding:11px 18px;
+    border-radius:9px;
+    box-shadow:0 6px 18px rgba(7,87,200,.22);
+}
+
+.menu-toggle{
+    display:none;
+    border:0;
+    background:var(--blue);
+    color:white;
+    width:42px;
+    height:42px;
+    border-radius:9px;
+    font-size:22px;
+    cursor:pointer;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-    padding:48px 0 42px;
+    position:relative;
+    padding:72px 0 65px;
+    overflow:hidden;
     background:
-    radial-gradient(circle at 85% 20%,rgba(7,87,200,.14),transparent 30%),
-    linear-gradient(135deg,#ffffff,#edf6ff);
+    radial-gradient(circle at 10% 20%,rgba(0,115,255,.14),transparent 30%),
+    radial-gradient(circle at 90% 80%,rgba(22,163,74,.12),transparent 28%),
+    linear-gradient(135deg,#ffffff 0%,#eef6ff 50%,#e8f3ff 100%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:rgba(7,87,200,.08);
+    top:-180px;
+    right:-120px;
+    animation:heroCircle 8s ease-in-out infinite;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:35px solid rgba(7,87,200,.06);
+    bottom:-130px;
+    left:-100px;
+    animation:heroCircle2 7s ease-in-out infinite;
 }
 
 .hero-grid{
+    position:relative;
+    z-index:2;
     display:grid;
-    grid-template-columns:1.08fr .92fr;
+    grid-template-columns:1.05fr .95fr;
     align-items:center;
-    gap:32px;
+    gap:45px;
 }
 
 .badge{
-    display:inline-block;
-    background:#e7f0ff;
-    border:1px solid #cfe0ff;
+    display:inline-flex;
+    align-items:center;
+    background:#e5f0ff;
+    border:1px solid #c9ddff;
     color:var(--blue);
-    padding:7px 12px;
+    padding:9px 15px;
     border-radius:30px;
-    font-size:11px;
-    font-weight:800;
-    margin-bottom:13px;
+    font-size:12px;
+    font-weight:900;
+    margin-bottom:17px;
+    animation:pulseBadge 2.5s infinite;
 }
 
 .hero h1{
     font-family:Poppins,sans-serif;
-    font-size:clamp(34px,5vw,56px);
-    line-height:1.05;
-    letter-spacing:-1.7px;
+    font-size:clamp(40px,5.4vw,67px);
+    line-height:1.03;
+    letter-spacing:-2.4px;
     color:var(--dark);
-    margin-bottom:15px;
+    margin-bottom:20px;
+    font-weight:900;
 }
 
 .hero h1 span{
@@ -133,15 +188,17 @@ nav a{
 }
 
 .hero p{
-    color:#536176;
-    font-size:15px;
-    max-width:620px;
-    margin-bottom:20px;
+    color:#4f6077;
+    font-size:17px;
+    line-height:1.7;
+    max-width:650px;
+    margin-bottom:26px;
+    font-weight:600;
 }
 
 .hero-buttons{
     display:flex;
-    gap:10px;
+    gap:13px;
     flex-wrap:wrap;
 }
 
@@ -151,22 +208,32 @@ nav a{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    padding:12px 18px;
-    border-radius:9px;
+    padding:14px 21px;
+    border-radius:10px;
     text-decoration:none;
-    font-size:13px;
-    font-weight:800;
+    font-size:14px;
+    font-weight:900;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .btn-primary{
-    background:var(--blue);
+    background:linear-gradient(135deg,#0757c8,#0b7cff);
     color:white;
-    box-shadow:0 8px 20px rgba(7,87,200,.22);
+    box-shadow:0 10px 25px rgba(7,87,200,.28);
+}
+
+.btn-primary:hover{
+    box-shadow:0 15px 30px rgba(7,87,200,.35);
 }
 
 .btn-whatsapp{
     background:#16a34a;
     color:white;
+    box-shadow:0 10px 22px rgba(22,163,74,.25);
 }
 
 /* HERO IMAGE */
@@ -175,95 +242,113 @@ nav a{
     position:relative;
     background:white;
     padding:10px;
-    border-radius:19px;
-    box-shadow:0 20px 55px rgba(12,50,100,.16);
-    animation:float 4s ease-in-out infinite;
+    border-radius:22px;
+    box-shadow:0 25px 65px rgba(12,50,100,.20);
+    animation:float 4.5s ease-in-out infinite;
+}
+
+.hero-card::before{
+    content:"";
+    position:absolute;
+    inset:-7px;
+    border:2px solid rgba(7,87,200,.13);
+    border-radius:27px;
+    z-index:-1;
 }
 
 .hero-card img{
     width:100%;
-    height:350px;
+    height:410px;
     object-fit:cover;
-    border-radius:14px;
+    border-radius:16px;
+    display:block;
 }
 
 .hero-overlay{
     position:absolute;
-    left:25px;
-    right:25px;
-    bottom:25px;
+    left:28px;
+    right:28px;
+    bottom:28px;
     background:rgba(255,255,255,.96);
-    padding:13px;
-    border-radius:12px;
+    padding:16px;
+    border-radius:13px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 .hero-overlay strong{
     display:block;
     color:var(--dark);
-    font-size:14px;
+    font-size:16px;
+    font-weight:900;
 }
 
 .hero-overlay span{
     color:#64748b;
-    font-size:11px;
+    font-size:12px;
+    font-weight:600;
 }
 
 /* ================= TRUST ================= */
 
 .trust{
-    background:var(--dark);
+    background:linear-gradient(100deg,#041127,#0b2750,#041127);
     color:white;
-    padding:14px 0;
+    padding:19px 0;
 }
 
 .trust-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:10px;
+    gap:15px;
     text-align:center;
 }
 
 .trust strong{
     display:block;
-    font-size:19px;
+    font-size:24px;
+    font-weight:900;
 }
 
 .trust span{
-    font-size:10px;
-    color:#b8c5d9;
+    font-size:11px;
+    color:#b9c9df;
+    font-weight:600;
 }
 
 /* ================= SECTION ================= */
 
 section{
-    padding:45px 0;
+    padding:70px 0;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:38px;
 }
 
 .mini{
     color:var(--blue);
-    font-size:11px;
-    font-weight:800;
+    font-size:12px;
+    font-weight:900;
     text-transform:uppercase;
-    letter-spacing:1.5px;
+    letter-spacing:1.8px;
 }
 
 .section-title h2{
     font-family:Poppins,sans-serif;
     color:var(--dark);
-    font-size:29px;
-    margin:4px 0;
+    font-size:36px;
+    line-height:1.2;
+    margin:7px 0 9px;
+    font-weight:900;
 }
 
 .section-title p{
-    color:#64748b;
-    font-size:13px;
-    max-width:650px;
+    color:#617087;
+    font-size:14px;
+    max-width:720px;
     margin:auto;
+    font-weight:600;
 }
 
 /* ================= SERVICES ================= */
@@ -271,123 +356,149 @@ section{
 .services{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:14px;
+    gap:20px;
 }
 
 .service{
     background:white;
-    border:1px solid #e5ebf3;
-    border-radius:14px;
+    border:1px solid #e1e9f3;
+    border-radius:17px;
     overflow:hidden;
-    transition:.3s;
+    transition:.35s;
+    box-shadow:0 5px 20px rgba(0,40,90,.04);
 }
 
 .service:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(12,45,90,.11);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(12,45,90,.13);
+    border-color:#c7dcf8;
 }
 
 .service-img{
     width:100%;
-    height:125px;
+    height:165px;
     object-fit:cover;
+    display:block;
 }
 
 .service-content{
-    padding:14px;
+    padding:19px;
 }
 
 .service h3{
-    font-size:16px;
+    font-size:18px;
     color:var(--dark);
-    margin-bottom:5px;
+    margin-bottom:8px;
+    font-weight:900;
 }
 
 .service p{
     color:#667085;
-    font-size:11px;
+    font-size:13px;
+    line-height:1.6;
+    font-weight:600;
 }
 
 .service ul{
-    padding-left:17px;
-    margin-top:7px;
+    padding-left:18px;
+    margin-top:10px;
 }
 
 .service li{
-    font-size:11px;
-    margin:3px 0;
+    font-size:12px;
+    margin:5px 0;
+    font-weight:700;
+    color:#334155;
 }
 
 /* ================= PRICING ================= */
 
 .pricing{
-    background:#eef5ff;
+    background:
+    radial-gradient(circle at 10% 10%,rgba(7,87,200,.08),transparent 25%),
+    linear-gradient(135deg,#eef6ff,#f7fbff);
 }
 
 .plans{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:15px;
+    gap:20px;
 }
 
 .plan{
     background:white;
-    border:1px solid #dfe8f5;
-    border-radius:15px;
-    padding:21px;
+    border:1px solid #dce6f2;
+    border-radius:18px;
+    padding:27px;
     position:relative;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(0,40,90,.05);
+}
+
+.plan:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 40px rgba(0,40,90,.12);
 }
 
 .plan.popular{
     border:2px solid var(--blue);
-    transform:translateY(-6px);
+    transform:translateY(-9px);
+    box-shadow:0 18px 40px rgba(7,87,200,.16);
+}
+
+.plan.popular:hover{
+    transform:translateY(-14px);
 }
 
 .popular-tag{
     position:absolute;
-    right:14px;
-    top:14px;
+    right:16px;
+    top:16px;
     background:var(--blue);
     color:white;
-    padding:5px 9px;
+    padding:6px 11px;
     border-radius:20px;
-    font-size:8px;
-    font-weight:800;
+    font-size:9px;
+    font-weight:900;
 }
 
 .plan h3{
     color:var(--dark);
-    font-size:19px;
+    font-size:21px;
+    font-weight:900;
 }
 
 .price{
     color:var(--blue);
-    font-size:31px;
-    font-weight:800;
-    margin:7px 0 14px;
+    font-size:35px;
+    font-weight:900;
+    margin:9px 0 17px;
 }
 
 .price small{
     color:#64748b;
-    font-size:11px;
+    font-size:12px;
+    font-weight:700;
 }
 
 .plan ul{
     list-style:none;
-    margin-bottom:17px;
+    margin-bottom:20px;
 }
 
 .plan li{
     border-bottom:1px solid #edf1f6;
-    padding:6px 0;
-    font-size:12px;
+    padding:9px 0;
+    font-size:13px;
+    font-weight:700;
+    color:#344054;
 }
 
 .plan li::before{
     content:"✓";
     color:var(--green);
     font-weight:900;
-    margin-right:7px;
+    margin-right:8px;
 }
 
 /* ================= WHY ================= */
@@ -395,28 +506,40 @@ section{
 .why-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:16px;
+    gap:22px;
 }
 
 .why-card{
     background:white;
-    border:1px solid #e5ebf3;
-    border-radius:14px;
-    padding:21px;
+    border:1px solid #e1e8f1;
+    border-radius:17px;
+    padding:27px;
+    box-shadow:0 6px 22px rgba(0,30,80,.04);
 }
 
 .why-card h3{
-    font-size:17px;
-    margin-bottom:8px;
+    font-size:21px;
+    margin-bottom:12px;
+    font-weight:900;
 }
 
 .why-card p{
-    color:#667085;
-    font-size:12px;
+    color:#5f6f85;
+    font-size:14px;
+    line-height:1.7;
+    font-weight:600;
+}
+
+.gain{
+    border-top:4px solid #16a34a;
 }
 
 .gain h3{
     color:#15803d;
+}
+
+.loss{
+    border-top:4px solid #dc2626;
 }
 
 .loss h3{
@@ -425,61 +548,142 @@ section{
 
 /* ================= PROCESS ================= */
 
+.process-section{
+    background:
+    linear-gradient(135deg,#eef5fb,#f8fbff);
+}
+
 .process{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:12px;
+    gap:18px;
 }
 
 .step{
     background:white;
-    border:1px solid #e5ebf3;
-    border-radius:13px;
-    padding:17px 10px;
+    border:1px solid #e1e8f1;
+    border-radius:16px;
+    padding:23px 15px;
     text-align:center;
+    transition:.3s;
+}
+
+.step:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,30,80,.09);
 }
 
 .step-number{
-    width:37px;
-    height:37px;
+    width:45px;
+    height:45px;
     display:grid;
     place-items:center;
-    background:#e9f2ff;
+    background:#e8f2ff;
     color:var(--blue);
     border-radius:50%;
-    font-weight:800;
-    margin:auto auto 8px;
+    font-weight:900;
+    font-size:16px;
+    margin:auto auto 11px;
 }
 
 .step h3{
-    font-size:13px;
+    font-size:15px;
+    font-weight:900;
 }
 
 .step p{
     color:#718096;
-    font-size:10px;
-    margin-top:4px;
+    font-size:12px;
+    margin-top:6px;
+    font-weight:600;
 }
 
 /* ================= CTA ================= */
 
 .cta{
-    background:linear-gradient(120deg,#06152e,#0a4ba8);
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at 15% 30%,rgba(0,132,255,.35),transparent 30%),
+    radial-gradient(circle at 85% 70%,rgba(22,163,74,.20),transparent 25%),
+    linear-gradient(120deg,#06152e,#0a4ba8);
     color:white;
     text-align:center;
-    padding:42px 15px;
+    padding:75px 15px;
+}
+
+.cta::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border:2px solid rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-150px;
+    right:5%;
+    animation:rotateCircle 12s linear infinite;
 }
 
 .cta h2{
+    position:relative;
     font-family:Poppins,sans-serif;
-    font-size:30px;
-    margin-bottom:7px;
+    font-size:38px;
+    line-height:1.2;
+    margin-bottom:10px;
+    font-weight:900;
 }
 
 .cta p{
+    position:relative;
     color:#d4e1f5;
+    font-size:15px;
+    margin-bottom:23px;
+    font-weight:600;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:#f7faff;
+}
+
+.contact-box{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    border:1px solid #e0e8f2;
+    box-shadow:0 12px 35px rgba(0,30,80,.07);
+}
+
+.contact-info h3{
+    font-family:Poppins,sans-serif;
+    font-size:28px;
+    color:var(--dark);
+    margin-bottom:12px;
+    font-weight:900;
+}
+
+.contact-info p{
+    color:#63738a;
+    font-size:14px;
+    line-height:1.7;
+    font-weight:600;
+}
+
+.contact-item{
+    margin-top:17px;
+    padding:13px;
+    background:#f5f9ff;
+    border-radius:10px;
     font-size:13px;
-    margin-bottom:17px;
+    font-weight:800;
+}
+
+.contact-item span{
+    color:var(--blue);
 }
 
 /* ================= FOOTER ================= */
@@ -487,35 +691,41 @@ section{
 footer{
     background:#040d1d;
     color:white;
-    padding:28px 0 18px;
+    padding:45px 0 20px;
 }
 
 .footer-grid{
     display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:22px;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:35px;
 }
 
 footer h3{
-    font-size:17px;
-    margin-bottom:7px;
+    font-size:19px;
+    margin-bottom:10px;
+    font-weight:900;
 }
 
 footer p,
 footer a{
     color:#aebbd0;
-    font-size:11px;
+    font-size:12px;
     text-decoration:none;
-    line-height:1.8;
+    line-height:2;
+    font-weight:600;
+}
+
+footer a:hover{
+    color:white;
 }
 
 .copyright{
     border-top:1px solid #1b2940;
     text-align:center;
-    margin-top:18px;
-    padding-top:13px;
+    margin-top:30px;
+    padding-top:17px;
     color:#8090a8;
-    font-size:10px;
+    font-size:11px;
 }
 
 /* ================= FLOATING ENQUIRY ================= */
@@ -525,35 +735,41 @@ footer a{
     right:0;
     top:52%;
     transform:translateY(-50%);
-    z-index:1500;
+    z-index:2500;
     writing-mode:vertical-rl;
-    background:var(--blue);
+    background:linear-gradient(180deg,#0757c8,#0b7cff);
     color:white;
-    padding:16px 9px;
-    border-radius:9px 0 0 9px;
-    font-size:12px;
-    font-weight:800;
+    padding:18px 10px;
+    border-radius:10px 0 0 10px;
+    font-size:13px;
+    font-weight:900;
     cursor:pointer;
-    box-shadow:0 7px 25px rgba(0,0,0,.22);
+    box-shadow:0 8px 28px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.floating-enquiry:hover{
+    padding-right:15px;
 }
 
 /* ================= WHATSAPP ================= */
 
 .whatsapp{
     position:fixed;
-    right:16px;
-    bottom:17px;
-    width:52px;
-    height:52px;
+    right:18px;
+    bottom:18px;
+    width:57px;
+    height:57px;
     display:grid;
     place-items:center;
     background:#25d366;
     color:white;
     border-radius:50%;
-    font-size:23px;
-    z-index:1500;
+    font-size:27px;
+    z-index:2500;
     text-decoration:none;
-    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    box-shadow:0 9px 28px rgba(0,0,0,.25);
+    animation:whatsappPulse 2s infinite;
 }
 
 /* ================= POPUP ================= */
@@ -562,77 +778,113 @@ footer a{
     display:none;
     position:fixed;
     inset:0;
-    background:rgba(2,12,30,.75);
-    z-index:3000;
+    background:rgba(2,12,30,.78);
+    z-index:5000;
     align-items:center;
     justify-content:center;
-    padding:15px;
+    padding:18px;
 }
 
 .popup.active{
-    display:flex;
+    display:flex !important;
 }
 
 .popup-box{
-    width:min(440px,100%);
+    width:min(470px,100%);
+    max-height:92vh;
+    overflow-y:auto;
     background:white;
-    border-radius:17px;
-    padding:22px;
+    border-radius:20px;
+    padding:28px;
     position:relative;
     animation:popup .3s ease;
+    box-shadow:0 30px 80px rgba(0,0,0,.3);
 }
 
 .close{
     position:absolute;
     right:13px;
-    top:12px;
-    width:30px;
-    height:30px;
+    top:13px;
+    width:34px;
+    height:34px;
     border:0;
     border-radius:50%;
     background:#edf2f7;
-    font-size:19px;
+    color:#172033;
+    font-size:21px;
     cursor:pointer;
+    font-weight:800;
 }
 
 .popup-box h2{
     font-family:Poppins,sans-serif;
     color:var(--dark);
-    font-size:23px;
+    font-size:26px;
+    font-weight:900;
+    margin-bottom:4px;
 }
 
 .popup-box p{
     color:#718096;
-    font-size:11px;
-    margin-bottom:14px;
+    font-size:12px;
+    margin-bottom:17px;
+    font-weight:600;
+}
+
+.selected-plan{
+    background:#eaf3ff;
+    border:1px solid #cfe2ff;
+    color:var(--blue);
+    padding:10px;
+    border-radius:9px;
+    margin-bottom:13px;
+    font-size:13px;
+    font-weight:900;
 }
 
 .form-group{
-    margin-bottom:9px;
+    margin-bottom:11px;
+}
+
+.form-group label{
+    display:block;
+    font-size:12px;
+    font-weight:900;
+    color:#344054;
+    margin-bottom:5px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea{
     width:100%;
-    padding:11px;
-    border:1px solid #dce4ee;
-    border-radius:8px;
+    padding:12px;
+    border:1px solid #d6e0eb;
+    border-radius:9px;
     outline:none;
     font-family:inherit;
-    font-size:12px;
+    font-size:13px;
+    background:#fbfdff;
+    transition:.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:var(--blue);
+    box-shadow:0 0 0 3px rgba(7,87,200,.08);
 }
 
 .form-group textarea{
-    height:70px;
+    height:80px;
     resize:none;
 }
 
-/* ================= ANIMATION ================= */
+/* ================= REVEAL ================= */
 
 .reveal{
     opacity:0;
-    transform:translateY(22px);
+    transform:translateY(28px);
     transition:all .7s ease;
 }
 
@@ -641,11 +893,13 @@ footer a{
     transform:translateY(0);
 }
 
+/* ================= ANIMATIONS ================= */
+
 .word{
     display:inline-block;
     opacity:0;
-    transform:translateY(13px);
-    animation:word .5s forwards;
+    transform:translateY(16px);
+    animation:word .55s forwards;
     margin-right:7px;
 }
 
@@ -661,55 +915,118 @@ footer a{
         transform:translateY(0);
     }
     50%{
-        transform:translateY(-7px);
+        transform:translateY(-10px);
     }
 }
 
 @keyframes popup{
     from{
-        transform:scale(.92);
+        transform:scale(.90) translateY(15px);
         opacity:0;
     }
     to{
-        transform:scale(1);
+        transform:scale(1) translateY(0);
         opacity:1;
+    }
+}
+
+@keyframes pulseBadge{
+    0%,100%{
+        box-shadow:0 0 0 0 rgba(7,87,200,.15);
+    }
+    50%{
+        box-shadow:0 0 0 8px rgba(7,87,200,0);
+    }
+}
+
+@keyframes heroCircle{
+    0%,100%{
+        transform:translate(0,0) scale(1);
+    }
+    50%{
+        transform:translate(-40px,30px) scale(1.12);
+    }
+}
+
+@keyframes heroCircle2{
+    0%,100%{
+        transform:rotate(0deg) scale(1);
+    }
+    50%{
+        transform:rotate(180deg) scale(1.15);
+    }
+}
+
+@keyframes rotateCircle{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes whatsappPulse{
+    0%,100%{
+        box-shadow:0 9px 28px rgba(0,0,0,.25);
+    }
+    50%{
+        box-shadow:0 9px 28px rgba(37,211,102,.45),0 0 0 8px rgba(37,211,102,.08);
     }
 }
 
 /* ================= MOBILE ================= */
 
-@media(max-width:800px){
+@media(max-width:900px){
 
     nav{
         display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        right:0;
+        background:white;
+        padding:18px 5%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        border-bottom:1px solid #e1e8f1;
+        box-shadow:0 15px 30px rgba(0,30,80,.1);
     }
 
-    .logo{
-        width:170px;
+    nav.mobile-open{
+        display:flex;
     }
 
-    .hero{
-        padding:35px 0;
+    nav a{
+        padding:12px 8px;
+        border-bottom:1px solid #edf1f6;
+    }
+
+    nav .nav-btn{
+        text-align:center;
+        margin-top:10px;
+        border-bottom:0;
+    }
+
+    .menu-toggle{
+        display:block;
     }
 
     .hero-grid{
         grid-template-columns:1fr;
     }
 
+    .hero{
+        padding:55px 0;
+    }
+
     .hero h1{
-        font-size:35px;
+        font-size:44px;
     }
 
     .hero-card img{
-        height:250px;
-    }
-
-    .trust-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    section{
-        padding:37px 0;
+        height:330px;
     }
 
     .services,
@@ -717,7 +1034,8 @@ footer a{
         grid-template-columns:1fr;
     }
 
-    .plan.popular{
+    .plan.popular,
+    .plan.popular:hover{
         transform:none;
     }
 
@@ -729,13 +1047,85 @@ footer a{
         grid-template-columns:repeat(2,1fr);
     }
 
+    .contact-box{
+        grid-template-columns:1fr;
+    }
+
     .footer-grid{
         grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .logo{
+        width:165px;
+    }
+
+    .hero{
+        padding:45px 0;
+    }
+
+    .hero h1{
+        font-size:37px;
+        letter-spacing:-1.4px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .hero-card img{
+        height:260px;
+    }
+
+    .hero-overlay{
+        left:20px;
+        right:20px;
+        bottom:20px;
+    }
+
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:17px;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .services,
+    .plans{
+        grid-template-columns:1fr;
+    }
+
+    .process{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-box{
+        padding:22px;
+    }
+
+    .cta h2{
+        font-size:30px;
     }
 
     .floating-enquiry{
         font-size:11px;
-        padding:14px 7px;
+        padding:15px 8px;
+    }
+
+    .whatsapp{
+        width:52px;
+        height:52px;
+        font-size:24px;
+        right:13px;
+        bottom:13px;
     }
 }
 
@@ -751,18 +1141,26 @@ footer a{
 <div class="container nav">
 
 <a href="#home">
+
+<!-- DO NOT CHANGE THIS LOGO LINK -->
 <img
 src="./file_000000007c2c72468b6de3e43eb47c36.png"
 alt="PrimeGrow Services Logo"
 class="logo">
+
 </a>
 
-<nav>
+<button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
+☰
+</button>
 
-<a href="#services">Services</a>
-<a href="#plans">Plans</a>
-<a href="#process">Process</a>
-<a href="#contact">Contact</a>
+<nav id="mainNav">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#plans" onclick="closeMenu()">Plans</a>
+<a href="#process" onclick="closeMenu()">Process</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
 
 <a
 class="nav-btn"
@@ -800,15 +1198,17 @@ Paid Ads aur Lead Generation — ek hi agency se.
 
 <div class="hero-buttons reveal">
 
-<a href="#plans" class="btn btn-primary">
-View Plans
-</a>
+<button
+class="btn btn-primary"
+onclick="openPopup('Digital Marketing Enquiry')">
+🚀 Get Free Consultation
+</button>
 
 <a
 href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Real%20Estate%20Digital%20Marketing%20ke%20baare%20mein%20jaankari%20chahiye."
 target="_blank"
 class="btn btn-whatsapp">
-WhatsApp Now
+💬 WhatsApp Now
 </a>
 
 </div>
@@ -819,8 +1219,8 @@ WhatsApp Now
 <div class="hero-card">
 
 <img
-src="./file_000000007c2c72468b6de3e43eb47c36.png"
-alt="PrimeGrow Services">
+src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=85"
+alt="Real Estate Digital Marketing">
 
 <div class="hero-overlay">
 
@@ -883,16 +1283,14 @@ Build Trust • Generate Enquiries • Convert Leads
 <h2>Real Estate Growth Services</h2>
 
 <p>
-Aapke property business ko online professional presence aur enquiry generation ke liye complete digital marketing solutions.
+Aapke property business ko professional online presence,
+visibility aur enquiry generation ke liye complete digital marketing solutions.
 </p>
 
 </div>
 
 
 <div class="services">
-
-
-<!-- SERVICE 1 -->
 
 <div class="service reveal">
 
@@ -917,11 +1315,8 @@ Professional website jo aapke projects aur properties ko 24/7 present kare.
 </ul>
 
 </div>
-
 </div>
 
-
-<!-- SERVICE 2 -->
 
 <div class="service reveal">
 
@@ -946,11 +1341,8 @@ Facebook aur Instagram par professional property presence.
 </ul>
 
 </div>
-
 </div>
 
-
-<!-- SERVICE 3 -->
 
 <div class="service reveal">
 
@@ -975,11 +1367,8 @@ Google Search aur Maps par local visibility improve karne ki strategy.
 </ul>
 
 </div>
-
 </div>
 
-
-<!-- SERVICE 4 -->
 
 <div class="service reveal">
 
@@ -1004,11 +1393,8 @@ Interested property buyers tak targeted advertising ke through reach.
 </ul>
 
 </div>
-
 </div>
 
-
-<!-- SERVICE 5 -->
 
 <div class="service reveal">
 
@@ -1033,11 +1419,8 @@ Search engines par long-term organic visibility build karna.
 </ul>
 
 </div>
-
 </div>
 
-
-<!-- SERVICE 6 -->
 
 <div class="service reveal">
 
@@ -1062,7 +1445,6 @@ Property campaigns ke liye conversion-focused paid advertising.
 </ul>
 
 </div>
-
 </div>
 
 </div>
@@ -1072,7 +1454,7 @@ Property campaigns ke liye conversion-focused paid advertising.
 </section>
 
 
-<!-- ================= PLANS ================= -->
+<!-- ================= PRICING ================= -->
 
 <section class="pricing" id="plans">
 
@@ -1092,9 +1474,6 @@ Apne current business stage ke according plan choose karein.
 
 
 <div class="plans">
-
-
-<!-- STARTER -->
 
 <div class="plan reveal">
 
@@ -1121,8 +1500,6 @@ Get Started
 
 </div>
 
-
-<!-- GROWTH -->
 
 <div class="plan popular reveal">
 
@@ -1154,8 +1531,6 @@ Get Started
 </div>
 
 
-<!-- PREMIUM -->
-
 <div class="plan reveal">
 
 <h3>Premium</h3>
@@ -1183,7 +1558,7 @@ Get Started
 
 </div>
 
-<p style="text-align:center;font-size:10px;color:#718096;margin-top:13px;">
+<p style="text-align:center;font-size:11px;color:#718096;margin-top:15px;font-weight:600;">
 *Advertising budget, domain, hosting and third-party charges are separate where applicable.
 </p>
 
@@ -1192,9 +1567,9 @@ Get Started
 </section>
 
 
-<!-- ================= WEBSITE ================= -->
+<!-- ================= WEBSITE BENEFITS ================= -->
 
-<section>
+<section id="website">
 
 <div class="container">
 
@@ -1237,6 +1612,14 @@ Website Starting From ₹2,999*
 </strong>
 </p>
 
+<br>
+
+<button
+class="btn btn-primary"
+onclick="openPopup('Website Development')">
+Get Website Enquiry
+</button>
+
 </div>
 
 
@@ -1265,7 +1648,7 @@ ka traffic effectively convert nahi ho pata.
 
 <section
 id="process"
-style="background:#f0f5fa;">
+class="process-section">
 
 <div class="container">
 
@@ -1279,24 +1662,23 @@ Our Process
 From Visibility To Leads
 </h2>
 
+<p>
+Simple process ke through aapke real estate business ko online growth system mein convert karte hain.
+</p>
+
 </div>
 
 
 <div class="process">
 
-
 <div class="step reveal">
 
-<div class="step-number">
-01
-</div>
+<div class="step-number">01</div>
 
-<h3>
-Business Audit
-</h3>
+<h3>Business Analysis</h3>
 
 <p>
-Aapke current digital presence ko analyse karte hain.
+Aapke business, location, property aur target audience ko samajhna.
 </p>
 
 </div>
@@ -1304,16 +1686,12 @@ Aapke current digital presence ko analyse karte hain.
 
 <div class="step reveal">
 
-<div class="step-number">
-02
-</div>
+<div class="step-number">02</div>
 
-<h3>
-Strategy
-</h3>
+<h3>Digital Setup</h3>
 
 <p>
-Audience, content aur marketing strategy decide hoti hai.
+Website, social media aur Google presence ko professionally setup karna.
 </p>
 
 </div>
@@ -1321,16 +1699,12 @@ Audience, content aur marketing strategy decide hoti hai.
 
 <div class="step reveal">
 
-<div class="step-number">
-03
-</div>
+<div class="step-number">03</div>
 
-<h3>
-Execution
-</h3>
+<h3>Marketing</h3>
 
 <p>
-Website, creatives, SEO aur campaigns implement hote hain.
+Content, SEO aur paid advertising ke through targeted audience tak reach.
 </p>
 
 </div>
@@ -1338,16 +1712,12 @@ Website, creatives, SEO aur campaigns implement hote hain.
 
 <div class="step reveal">
 
-<div class="step-number">
-04
-</div>
+<div class="step-number">04</div>
 
-<h3>
-Lead Growth
-</h3>
+<h3>Leads & Growth</h3>
 
 <p>
-Data analyse karke campaign ko improve karte hain.
+Enquiries track karke better conversion aur continuous growth par focus.
 </p>
 
 </div>
@@ -1361,26 +1731,96 @@ Data analyse karke campaign ko improve karte hain.
 
 <!-- ================= CTA ================= -->
 
-<section class="cta" id="contact">
+<section class="cta">
 
 <div class="container">
 
-<h2 class="reveal">
-Ready To Grow Your Property Business?
+<h2>
+Ready To Grow Your Real Estate Business?
 </h2>
 
-<p class="reveal">
-Let's discuss your project, target audience and lead generation requirements.
+<p>
+Aaj hi apni free digital marketing consultation book karein.
 </p>
 
 <button
-class="btn"
-style="background:white;color:#0757c8;"
+class="btn btn-whatsapp"
 onclick="openPopup('Free Consultation')">
-
-Get Free Consultation
-
+🚀 Get Free Consultation
 </button>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+<div class="container">
+
+<div class="contact-box reveal">
+
+<div class="contact-info">
+
+<div class="mini">Contact PrimeGrow</div>
+
+<h3>Let's Grow Your Business</h3>
+
+<p>
+Real estate agents, builders, property consultants aur developers
+ke liye professional digital marketing solutions.
+</p>
+
+<div class="contact-item">
+📞 Phone:
+<span>9911513666</span>
+</div>
+
+<div class="contact-item">
+💬 WhatsApp:
+<span>Available for Enquiries</span>
+</div>
+
+<div class="contact-item">
+📍 Address:
+<span>Village Bhowapur, Kaushambi Road, Near EDM Mall, Ghaziabad, UP 201010</span>
+</div>
+
+</div>
+
+
+<div>
+
+<h3 style="font-family:Poppins;font-size:25px;color:#06152e;margin-bottom:15px;">
+Start Your Enquiry
+</h3>
+
+<p style="font-size:13px;color:#64748b;font-weight:600;margin-bottom:18px;">
+Apni requirement batayein. Hamari team aapse contact karegi.
+</p>
+
+<button
+class="btn btn-primary"
+style="width:100%;"
+onclick="openPopup('Contact Enquiry')">
+📩 Send Enquiry
+</button>
+
+<br><br>
+
+<a
+class="btn btn-whatsapp"
+style="width:100%;"
+href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Digital%20Marketing%20services%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+💬 Chat On WhatsApp
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -1397,14 +1837,15 @@ Get Free Consultation
 
 <div>
 
-<h3>
-PrimeGrow Services
-</h3>
+<h3>PrimeGrow Services</h3>
 
 <p>
-Real Estate Digital Marketing Agency helping agents,
-builders, developers and property consultants build
-online visibility and generate enquiries.
+Real Estate Digital Marketing Agency providing Website,
+Social Media, SEO, Google Business, Paid Ads and Lead Generation solutions.
+</p>
+
+<p>
+📞 9911513666
 </p>
 
 </div>
@@ -1412,52 +1853,26 @@ online visibility and generate enquiries.
 
 <div>
 
-<h3>
-Contact
-</h3>
+<h3>Quick Links</h3>
 
-<p>
-📞 <a href="tel:+919911513666">
-9911513666
-</a>
-</p>
-
-<p>
-💬 <a
-href="https://wa.me/919911513666"
-target="_blank">
-WhatsApp
-</a>
-</p>
-
-<p>
-📍 Chajarsi, Sector 63, Noida, Uttar Pradesh
-</p>
+<p><a href="#home">Home</a></p>
+<p><a href="#services">Services</a></p>
+<p><a href="#plans">Plans</a></p>
+<p><a href="#process">Process</a></p>
+<p><a href="#contact">Contact</a></p>
 
 </div>
 
 
 <div>
 
-<h3>
-Quick Links
-</h3>
+<h3>Services</h3>
 
-<p>
-<a href="#services">Services</a>
-</p>
-
-<p>
-<a href="#plans">Plans</a>
-</p>
-
-<p>
-<a href="#process">Process</a>
-</p>
-
-<p>
-<a href="#contact">Contact</a>
-</p>
+<p><a href="#services">Website Designing</a></p>
+<p><a href="#services">Social Media Marketing</a></p>
+<p><a href="#services">Google Business</a></p>
+<p><a href="#services">Lead Generation</a></p>
+<p><a href="#services">SEO & Local SEO</a></p>
 
 </div>
 
@@ -1479,9 +1894,9 @@ Quick Links
 
 <div
 class="floating-enquiry"
-onclick="openPopup('Website Enquiry')">
+onclick="openPopup('Quick Enquiry')">
 
-ENQUIRE NOW
+📩 ENQUIRE NOW
 
 </div>
 
@@ -1490,11 +1905,11 @@ ENQUIRE NOW
 
 <a
 class="whatsapp"
-href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20discuss%20Real%20Estate%20Digital%20Marketing."
+href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Real%20Estate%20Digital%20Marketing%20services%20ke%20baare%20mein%20jaankari%20chahiye."
 target="_blank"
 aria-label="WhatsApp">
 
-☏
+💬
 
 </a>
 
@@ -1503,49 +1918,54 @@ aria-label="WhatsApp">
 
 <div
 class="popup"
-id="popup">
+id="enquiryPopup"
+onclick="outsidePopup(event)">
 
 <div class="popup-box">
 
 <button
 class="close"
 onclick="closePopup()">
-
 ×
-
 </button>
 
-
-<h2>
-Get In Touch
-</h2>
+<h2>Get In Touch</h2>
 
 <p>
-Tell us about your real estate business and we will contact you.
+Apni requirement share karein. PrimeGrow Services team aapse contact karegi.
 </p>
 
+<div
+class="selected-plan"
+id="selectedPlan">
+General Enquiry
+</div>
 
-<form
-id="leadForm">
-
+<form onsubmit="submitEnquiry(event)">
 
 <div class="form-group">
+
+<label>Your Name *</label>
 
 <input
 type="text"
 id="name"
-placeholder="Your Name"
+placeholder="Enter your name"
 required>
 
 </div>
 
 
 <div class="form-group">
+
+<label>Mobile Number *</label>
 
 <input
 type="tel"
 id="phone"
-placeholder="Mobile Number"
+placeholder="Enter 10 digit mobile number"
+pattern="[0-9]{10}"
+maxlength="10"
 required>
 
 </div>
@@ -1553,33 +1973,62 @@ required>
 
 <div class="form-group">
 
-<select id="service" required>
+<label>Business Type</label>
 
-<option value="">
-Select Service
+<select id="business">
+
+<option value="Real Estate Agent">
+Real Estate Agent
 </option>
 
-<option>
-Website Development
+<option value="Builder / Developer">
+Builder / Developer
 </option>
 
-<option>
+<option value="Property Consultant">
+Property Consultant
+</option>
+
+<option value="Other Business">
+Other Business
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Service Required</label>
+
+<select id="service">
+
+<option value="Social Media Marketing">
 Social Media Marketing
 </option>
 
-<option>
+<option value="Website Development">
+Website Development
+</option>
+
+<option value="Google Business / Local SEO">
 Google Business / Local SEO
 </option>
 
-<option>
+<option value="Lead Generation">
 Lead Generation
 </option>
 
-<option>
+<option value="SEO">
+SEO
+</option>
+
+<option value="Google & Meta Ads">
 Google & Meta Ads
 </option>
 
-<option>
+<option value="Complete Digital Marketing">
 Complete Digital Marketing
 </option>
 
@@ -1590,10 +2039,11 @@ Complete Digital Marketing
 
 <div class="form-group">
 
+<label>Message</label>
+
 <textarea
 id="message"
-placeholder="Tell us about your requirement">
-</textarea>
+placeholder="Tell us about your requirement"></textarea>
 
 </div>
 
@@ -1603,7 +2053,7 @@ type="submit"
 class="btn btn-primary"
 style="width:100%;">
 
-Send Enquiry on WhatsApp
+🚀 Send Enquiry on WhatsApp
 
 </button>
 
@@ -1618,160 +2068,217 @@ Send Enquiry on WhatsApp
 
 <script>
 
-/* HERO WORD ANIMATION */
+/* ================= HERO TEXT ANIMATION ================= */
 
-const heroText =
-"Grow Your Real Estate Business With Digital Marketing";
+const heroText = [
+    "Grow Your Real Estate Business",
+    "Get More Property Enquiries"
+];
 
-const heroTitle =
-document.getElementById("heroTitle");
+const heroTitle = document.getElementById("heroTitle");
 
-heroText.split(" ").forEach((word,index)=>{
+let titleIndex = 0;
 
-const span =
-document.createElement("span");
+function showHeroTitle(){
 
-span.className="word";
+    heroTitle.innerHTML = "";
 
-span.style.animationDelay =
-(index * 0.08)+"s";
+    const words = heroText[titleIndex].split(" ");
 
-span.innerHTML =
-word;
+    words.forEach((word,index)=>{
 
-heroTitle.appendChild(span);
+        const span = document.createElement("span");
 
-});
+        span.className = "word";
+
+        span.textContent = word;
+
+        span.style.animationDelay = (index * 0.08) + "s";
+
+        heroTitle.appendChild(span);
+
+    });
+
+    const lastWord = heroTitle.lastElementChild;
+
+    if(lastWord){
+        lastWord.style.color = "#0757c8";
+    }
+
+    titleIndex = (titleIndex + 1) % heroText.length;
+}
+
+showHeroTitle();
+
+setInterval(showHeroTitle,5000);
 
 
-/* SCROLL REVEAL */
+/* ================= MOBILE MENU ================= */
 
-const reveals =
-document.querySelectorAll(".reveal");
+function toggleMenu(){
 
-const revealObserver =
-new IntersectionObserver(
+    const nav = document.getElementById("mainNav");
 
-(entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
+    nav.classList.toggle("mobile-open");
 
 }
 
-});
+function closeMenu(){
 
-},
+    const nav = document.getElementById("mainNav");
 
-{
-threshold:.12
+    nav.classList.remove("mobile-open");
+
 }
 
-);
 
-reveals.forEach(el=>{
-revealObserver.observe(el);
-});
-
-
-/* POPUP */
+/* ================= POPUP ================= */
 
 function openPopup(plan){
 
-document.getElementById("popup")
-.classList.add("active");
+    const popup = document.getElementById("enquiryPopup");
 
-if(plan){
+    const selected = document.getElementById("selectedPlan");
 
-document.getElementById("message").value =
-"I am interested in: "+plan;
+    selected.textContent = "Selected: " + plan;
 
-}
+    popup.classList.add("active");
+
+    document.body.style.overflow = "hidden";
 
 }
 
 
 function closePopup(){
 
-document.getElementById("popup")
-.classList.remove("active");
+    const popup = document.getElementById("enquiryPopup");
+
+    popup.classList.remove("active");
+
+    document.body.style.overflow = "";
 
 }
 
 
-/* CLOSE POPUP OUTSIDE */
+function outsidePopup(event){
 
-document.getElementById("popup")
-.addEventListener("click",function(e){
+    if(event.target.id === "enquiryPopup"){
 
-if(e.target === this){
+        closePopup();
 
-closePopup();
+    }
 
 }
+
+
+/* ESC KEY CLOSE */
+
+document.addEventListener("keydown",function(event){
+
+    if(event.key === "Escape"){
+
+        closePopup();
+
+    }
 
 });
 
 
-/* WHATSAPP FORM */
+/* ================= FORM SUBMIT ================= */
 
-document.getElementById("leadForm")
-.addEventListener("submit",function(e){
+function submitEnquiry(event){
 
-e.preventDefault();
+    event.preventDefault();
 
-const name =
-document.getElementById("name").value;
+    const name =
+        document.getElementById("name").value.trim();
 
-const phone =
-document.getElementById("phone").value;
+    const phone =
+        document.getElementById("phone").value.trim();
 
-const service =
-document.getElementById("service").value;
+    const business =
+        document.getElementById("business").value;
 
-const message =
-document.getElementById("message").value;
+    const service =
+        document.getElementById("service").value;
+
+    const message =
+        document.getElementById("message").value.trim();
+
+    const selected =
+        document.getElementById("selectedPlan").textContent;
+
+    const text =
+        "Hello PrimeGrow Services,%0A%0A" +
+
+        "I want to enquire about your services.%0A%0A" +
+
+        "Name: " + encodeURIComponent(name) + "%0A" +
+
+        "Mobile: " + encodeURIComponent(phone) + "%0A" +
+
+        "Business: " + encodeURIComponent(business) + "%0A" +
+
+        "Service: " + encodeURIComponent(service) + "%0A" +
+
+        "Plan/Enquiry: " + encodeURIComponent(selected) + "%0A" +
+
+        "Message: " + encodeURIComponent(message);
+
+    const whatsappURL =
+        "https://wa.me/919911513666?text=" + text;
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+    closePopup();
+
+}
 
 
-const whatsappMessage =
-`Hello PrimeGrow Services,
+/* ================= SCROLL REVEAL ================= */
 
-New Website Enquiry:
+function revealElements(){
 
-Name: ${name}
-Mobile: ${phone}
-Service: ${service}
-Requirement: ${message}
+    const elements =
+        document.querySelectorAll(".reveal");
 
-Please contact me regarding Real Estate Digital Marketing Services.`;
+    const windowHeight =
+        window.innerHeight;
 
+    elements.forEach(element => {
 
-const whatsappURL =
-"https://wa.me/919911513666?text="
-+
-encodeURIComponent(whatsappMessage);
+        const position =
+            element.getBoundingClientRect().top;
 
+        if(position < windowHeight - 60){
 
-window.open(
-whatsappURL,
-"_blank"
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+    "scroll",
+    revealElements
 );
 
-});
+window.addEventListener(
+    "load",
+    revealElements
+);
 
 
-/* ESC KEY */
+/* ================= CLOSE MOBILE MENU ON SCROLL ================= */
 
-document.addEventListener("keydown",function(e){
+window.addEventListener("scroll",function(){
 
-if(e.key === "Escape"){
-
-closePopup();
-
-}
+    closeMenu();
 
 });
 
