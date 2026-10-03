@@ -1,1 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>PrimeGrow Services | Real Estate Digital Marketing Agency</title>
+
+<meta name="description"
+content="PrimeGrow Services provides professional digital marketing services for real estate agents, builders, property consultants and developers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Arial,sans-serif;
+    background:#f7faff;
+    color:#172033;
+    line-height:1.45;
+    overflow-x:hidden;
+}
+
+:root{
+    --blue:#0757c8;
+    --dark:#07152d;
+    --green:#16a34a;
+    --light:#eef5ff;
+    --white:#ffffff;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e7edf5;
+}
+
+.nav{
+    min-height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:190px;
+    max-height:58px;
+    object-fit:contain;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#172033;
+    font-size:13px;
+    font-weight:700;
+}
+
+.nav-btn{
+    background:var(--blue);
+    color:white!important;
+    padding:10px 16px;
+    border-radius:8px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:48px 0 42px;
+    background:
+    radial-gradient(circle at 85% 20%,rgba(7,87,200,.14),transparent 30%),
+    linear-gradient(135deg,#ffffff,#edf6ff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    align-items:center;
+    gap:32px;
+}
+
+.badge{
+    display:inline-block;
+    background:#e7f0ff;
+    border:1px solid #cfe0ff;
+    color:var(--blue);
+    padding:7px 12px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:800;
+    margin-bottom:13px;
+}
+
+.hero h1{
+    font-family:Poppins,sans-serif;
+    font-size:clamp(34px,5vw,56px);
+    line-height:1.05;
+    letter-spacing:-1.7px;
+    color:var(--dark);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:var(--blue);
+}
+
+.hero p{
+    color:#536176;
+    font-size:15px;
+    max-width:620px;
+    margin-bottom:20px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    border:0;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 18px;
+    border-radius:9px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:800;
+}
+
+.btn-primary{
+    background:var(--blue);
+    color:white;
+    box-shadow:0 8px 20px rgba(7,87,200,.22);
+}
+
+.btn-whatsapp{
+    background:#16a34a;
+    color:white;
+}
+
+/* HERO IMAGE */
+
+.hero-card{
+    position:relative;
+    background:white;
+    padding:10px;
+    border-radius:19px;
+    box-shadow:0 20px 55px rgba(12,50,100,.16);
+    animation:float 4s ease-in-out infinite;
+}
+
+.hero-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.hero-overlay{
+    position:absolute;
+    left:25px;
+    right:25px;
+    bottom:25px;
+    background:rgba(255,255,255,.96);
+    padding:13px;
+    border-radius:12px;
+}
+
+.hero-overlay strong{
+    display:block;
+    color:var(--dark);
+    font-size:14px;
+}
+
+.hero-overlay span{
+    color:#64748b;
+    font-size:11px;
+}
+
+/* ================= TRUST ================= */
+
+.trust{
+    background:var(--dark);
+    color:white;
+    padding:14px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    text-align:center;
+}
+
+.trust strong{
+    display:block;
+    font-size:19px;
+}
+
+.trust span{
+    font-size:10px;
+    color:#b8c5d9;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:45px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.mini{
+    color:var(--blue);
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.section-title h2{
+    font-family:Poppins,sans-serif;
+    color:var(--dark);
+    font-size:29px;
+    margin:4px 0;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:13px;
+    max-width:650px;
+    margin:auto;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.service{
+    background:white;
+    border:1px solid #e5ebf3;
+    border-radius:14px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(12,45,90,.11);
+}
+
+.service-img{
+    width:100%;
+    height:125px;
+    object-fit:cover;
+}
+
+.service-content{
+    padding:14px;
+}
+
+.service h3{
+    font-size:16px;
+    color:var(--dark);
+    margin-bottom:5px;
+}
+
+.service p{
+    color:#667085;
+    font-size:11px;
+}
+
+.service ul{
+    padding-left:17px;
+    margin-top:7px;
+}
+
+.service li{
+    font-size:11px;
+    margin:3px 0;
+}
+
+/* ================= PRICING ================= */
+
+.pricing{
+    background:#eef5ff;
+}
+
+.plans{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.plan{
+    background:white;
+    border:1px solid #dfe8f5;
+    border-radius:15px;
+    padding:21px;
+    position:relative;
+}
+
+.plan.popular{
+    border:2px solid var(--blue);
+    transform:translateY(-6px);
+}
+
+.popular-tag{
+    position:absolute;
+    right:14px;
+    top:14px;
+    background:var(--blue);
+    color:white;
+    padding:5px 9px;
+    border-radius:20px;
+    font-size:8px;
+    font-weight:800;
+}
+
+.plan h3{
+    color:var(--dark);
+    font-size:19px;
+}
+
+.price{
+    color:var(--blue);
+    font-size:31px;
+    font-weight:800;
+    margin:7px 0 14px;
+}
+
+.price small{
+    color:#64748b;
+    font-size:11px;
+}
+
+.plan ul{
+    list-style:none;
+    margin-bottom:17px;
+}
+
+.plan li{
+    border-bottom:1px solid #edf1f6;
+    padding:6px 0;
+    font-size:12px;
+}
+
+.plan li::before{
+    content:"✓";
+    color:var(--green);
+    font-weight:900;
+    margin-right:7px;
+}
+
+/* ================= WHY ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+.why-card{
+    background:white;
+    border:1px solid #e5ebf3;
+    border-radius:14px;
+    padding:21px;
+}
+
+.why-card h3{
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.why-card p{
+    color:#667085;
+    font-size:12px;
+}
+
+.gain h3{
+    color:#15803d;
+}
+
+.loss h3{
+    color:#dc2626;
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.step{
+    background:white;
+    border:1px solid #e5ebf3;
+    border-radius:13px;
+    padding:17px 10px;
+    text-align:center;
+}
+
+.step-number{
+    width:37px;
+    height:37px;
+    display:grid;
+    place-items:center;
+    background:#e9f2ff;
+    color:var(--blue);
+    border-radius:50%;
+    font-weight:800;
+    margin:auto auto 8px;
+}
+
+.step h3{
+    font-size:13px;
+}
+
+.step p{
+    color:#718096;
+    font-size:10px;
+    margin-top:4px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(120deg,#06152e,#0a4ba8);
+    color:white;
+    text-align:center;
+    padding:42px 15px;
+}
+
+.cta h2{
+    font-family:Poppins,sans-serif;
+    font-size:30px;
+    margin-bottom:7px;
+}
+
+.cta p{
+    color:#d4e1f5;
+    font-size:13px;
+    margin-bottom:17px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#040d1d;
+    color:white;
+    padding:28px 0 18px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:22px;
+}
+
+footer h3{
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+footer p,
+footer a{
+    color:#aebbd0;
+    font-size:11px;
+    text-decoration:none;
+    line-height:1.8;
+}
+
+.copyright{
+    border-top:1px solid #1b2940;
+    text-align:center;
+    margin-top:18px;
+    padding-top:13px;
+    color:#8090a8;
+    font-size:10px;
+}
+
+/* ================= FLOATING ENQUIRY ================= */
+
+.floating-enquiry{
+    position:fixed;
+    right:0;
+    top:52%;
+    transform:translateY(-50%);
+    z-index:1500;
+    writing-mode:vertical-rl;
+    background:var(--blue);
+    color:white;
+    padding:16px 9px;
+    border-radius:9px 0 0 9px;
+    font-size:12px;
+    font-weight:800;
+    cursor:pointer;
+    box-shadow:0 7px 25px rgba(0,0,0,.22);
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:16px;
+    bottom:17px;
+    width:52px;
+    height:52px;
+    display:grid;
+    place-items:center;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    font-size:23px;
+    z-index:1500;
+    text-decoration:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* ================= POPUP ================= */
+
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(2,12,30,.75);
+    z-index:3000;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+}
+
+.popup.active{
+    display:flex;
+}
+
+.popup-box{
+    width:min(440px,100%);
+    background:white;
+    border-radius:17px;
+    padding:22px;
+    position:relative;
+    animation:popup .3s ease;
+}
+
+.close{
+    position:absolute;
+    right:13px;
+    top:12px;
+    width:30px;
+    height:30px;
+    border:0;
+    border-radius:50%;
+    background:#edf2f7;
+    font-size:19px;
+    cursor:pointer;
+}
+
+.popup-box h2{
+    font-family:Poppins,sans-serif;
+    color:var(--dark);
+    font-size:23px;
+}
+
+.popup-box p{
+    color:#718096;
+    font-size:11px;
+    margin-bottom:14px;
+}
+
+.form-group{
+    margin-bottom:9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:11px;
+    border:1px solid #dce4ee;
+    border-radius:8px;
+    outline:none;
+    font-family:inherit;
+    font-size:12px;
+}
+
+.form-group textarea{
+    height:70px;
+    resize:none;
+}
+
+/* ================= ANIMATION ================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(22px);
+    transition:all .7s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.word{
+    display:inline-block;
+    opacity:0;
+    transform:translateY(13px);
+    animation:word .5s forwards;
+    margin-right:7px;
+}
+
+@keyframes word{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-7px);
+    }
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.92);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    nav{
+        display:none;
+    }
+
+    .logo{
+        width:170px;
+    }
+
+    .hero{
+        padding:35px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero-card img{
+        height:250px;
+    }
+
+    .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    section{
+        padding:37px 0;
+    }
+
+    .services,
+    .plans{
+        grid-template-columns:1fr;
+    }
+
+    .plan.popular{
+        transform:none;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .floating-enquiry{
+        font-size:11px;
+        padding:14px 7px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="#home">
+<img
+src="./file_000000007c2c72468b6de3e43eb47c36.png"
+alt="PrimeGrow Services Logo"
+class="logo">
+</a>
+
+<nav>
+
+<a href="#services">Services</a>
+<a href="#plans">Plans</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
+
+<a
+class="nav-btn"
+href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20know%20about%20Real%20Estate%20Digital%20Marketing."
+target="_blank">
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge reveal">
+REAL ESTATE DIGITAL MARKETING SPECIALISTS
+</div>
+
+<h1 id="heroTitle"></h1>
+
+<p class="reveal">
+Real Estate Agents, Builders aur Property Consultants ke liye
+Website, Social Media, SEO, Google Business Profile,
+Paid Ads aur Lead Generation — ek hi agency se.
+</p>
+
+<div class="hero-buttons reveal">
+
+<a href="#plans" class="btn btn-primary">
+View Plans
+</a>
+
+<a
+href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20mujhe%20Real%20Estate%20Digital%20Marketing%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank"
+class="btn btn-whatsapp">
+WhatsApp Now
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<img
+src="./file_000000007c2c72468b6de3e43eb47c36.png"
+alt="PrimeGrow Services">
+
+<div class="hero-overlay">
+
+<strong>Grow Your Real Estate Business Online</strong>
+
+<span>
+Build Trust • Generate Enquiries • Convert Leads
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div>
+<strong>360°</strong>
+<span>Digital Marketing</span>
+</div>
+
+<div>
+<strong>24/7</strong>
+<span>Online Presence</span>
+</div>
+
+<div>
+<strong>Local</strong>
+<span>Lead Targeting</span>
+</div>
+
+<div>
+<strong>ROI</strong>
+<span>Focused Strategy</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<div class="mini">What We Do</div>
+
+<h2>Real Estate Growth Services</h2>
+
+<p>
+Aapke property business ko online professional presence aur enquiry generation ke liye complete digital marketing solutions.
+</p>
+
+</div>
+
+
+<div class="services">
+
+
+<!-- SERVICE 1 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+alt="Real Estate Website">
+
+<div class="service-content">
+
+<h3>🌐 Real Estate Website</h3>
+
+<p>
+Professional website jo aapke projects aur properties ko 24/7 present kare.
+</p>
+
+<ul>
+<li>Mobile Responsive</li>
+<li>Property Listing</li>
+<li>WhatsApp Enquiry</li>
+<li>Lead Form</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SERVICE 2 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+alt="Social Media Marketing">
+
+<div class="service-content">
+
+<h3>📱 Social Media Marketing</h3>
+
+<p>
+Facebook aur Instagram par professional property presence.
+</p>
+
+<ul>
+<li>Posts & Reels</li>
+<li>Content Planning</li>
+<li>Creative Designs</li>
+<li>Page Management</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SERVICE 3 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80"
+alt="Google Business">
+
+<div class="service-content">
+
+<h3>📍 Google Business</h3>
+
+<p>
+Google Search aur Maps par local visibility improve karne ki strategy.
+</p>
+
+<ul>
+<li>Profile Optimization</li>
+<li>Category Optimization</li>
+<li>Local SEO</li>
+<li>Review Strategy</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SERVICE 4 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+alt="Lead Generation">
+
+<div class="service-content">
+
+<h3>🎯 Lead Generation</h3>
+
+<p>
+Interested property buyers tak targeted advertising ke through reach.
+</p>
+
+<ul>
+<li>Meta Ads</li>
+<li>Lead Campaigns</li>
+<li>Audience Targeting</li>
+<li>Lead Tracking</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SERVICE 5 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+alt="SEO">
+
+<div class="service-content">
+
+<h3>🔎 SEO & Local SEO</h3>
+
+<p>
+Search engines par long-term organic visibility build karna.
+</p>
+
+<ul>
+<li>Keyword Research</li>
+<li>On Page SEO</li>
+<li>Local SEO</li>
+<li>Content Strategy</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SERVICE 6 -->
+
+<div class="service reveal">
+
+<img
+class="service-img"
+src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=800&q=80"
+alt="Google Facebook Ads">
+
+<div class="service-content">
+
+<h3>📈 Google & Meta Ads</h3>
+
+<p>
+Property campaigns ke liye conversion-focused paid advertising.
+</p>
+
+<ul>
+<li>Campaign Setup</li>
+<li>Audience Targeting</li>
+<li>Retargeting</li>
+<li>Performance Tracking</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PLANS ================= -->
+
+<section class="pricing" id="plans">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<div class="mini">Simple Pricing</div>
+
+<h2>Choose Your Growth Plan</h2>
+
+<p>
+Apne current business stage ke according plan choose karein.
+</p>
+
+</div>
+
+
+<div class="plans">
+
+
+<!-- STARTER -->
+
+<div class="plan reveal">
+
+<h3>Starter</h3>
+
+<div class="price">
+₹2,999 <small>/month</small>
+</div>
+
+<ul>
+<li>Social Media Management</li>
+<li>8 Professional Posts</li>
+<li>4 Reels / Month</li>
+<li>Basic Content Strategy</li>
+<li>Facebook & Instagram Setup</li>
+<li>Monthly Performance Report</li>
+</ul>
+
+<button
+class="btn btn-primary"
+onclick="openPopup('Starter Plan')">
+Get Started
+</button>
+
+</div>
+
+
+<!-- GROWTH -->
+
+<div class="plan popular reveal">
+
+<div class="popular-tag">
+POPULAR
+</div>
+
+<h3>Growth</h3>
+
+<div class="price">
+₹4,999 <small>/month</small>
+</div>
+
+<ul>
+<li>Social Media Management</li>
+<li>12 Professional Posts</li>
+<li>8 Reels / Month</li>
+<li>Google Business Optimization</li>
+<li>Lead Generation Strategy</li>
+<li>Monthly Performance Report</li>
+</ul>
+
+<button
+class="btn btn-primary"
+onclick="openPopup('Growth Plan')">
+Get Started
+</button>
+
+</div>
+
+
+<!-- PREMIUM -->
+
+<div class="plan reveal">
+
+<h3>Premium</h3>
+
+<div class="price">
+₹7,999 <small>/month</small>
+</div>
+
+<ul>
+<li>Complete Social Media Management</li>
+<li>20 Posts / Month</li>
+<li>12 Reels / Month</li>
+<li>Google Business + Local SEO</li>
+<li>Lead Generation Campaign</li>
+<li>Advanced Growth Strategy</li>
+</ul>
+
+<button
+class="btn btn-primary"
+onclick="openPopup('Premium Plan')">
+Get Started
+</button>
+
+</div>
+
+</div>
+
+<p style="text-align:center;font-size:10px;color:#718096;margin-top:13px;">
+*Advertising budget, domain, hosting and third-party charges are separate where applicable.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= WEBSITE ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<div class="mini">
+Website Development
+</div>
+
+<h2>
+Professional Real Estate Website
+</h2>
+
+<p>
+Aapki property ko sirf social media post nahi — ek professional digital identity chahiye.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-card gain reveal">
+
+<h3>
+✓ Website se kya benefit?
+</h3>
+
+<p>
+Professional image, property showcase, Google visibility,
+WhatsApp enquiries, lead forms, project details aur
+24/7 online presence.
+</p>
+
+<br>
+
+<p>
+<strong>
+Website Starting From ₹2,999*
+</strong>
+</p>
+
+</div>
+
+
+<div class="why-card loss reveal">
+
+<h3>
+⚠ Website na hone ka potential loss
+</h3>
+
+<p>
+Customer ko proper information nahi milti, trust kam ho sakta hai,
+competitors ke paas enquiry ja sakti hai aur paid advertising
+ka traffic effectively convert nahi ho pata.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section
+id="process"
+style="background:#f0f5fa;">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<div class="mini">
+Our Process
+</div>
+
+<h2>
+From Visibility To Leads
+</h2>
+
+</div>
+
+
+<div class="process">
+
+
+<div class="step reveal">
+
+<div class="step-number">
+01
+</div>
+
+<h3>
+Business Audit
+</h3>
+
+<p>
+Aapke current digital presence ko analyse karte hain.
+</p>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="step-number">
+02
+</div>
+
+<h3>
+Strategy
+</h3>
+
+<p>
+Audience, content aur marketing strategy decide hoti hai.
+</p>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="step-number">
+03
+</div>
+
+<h3>
+Execution
+</h3>
+
+<p>
+Website, creatives, SEO aur campaigns implement hote hain.
+</p>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="step-number">
+04
+</div>
+
+<h3>
+Lead Growth
+</h3>
+
+<p>
+Data analyse karke campaign ko improve karte hain.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<h2 class="reveal">
+Ready To Grow Your Property Business?
+</h2>
+
+<p class="reveal">
+Let's discuss your project, target audience and lead generation requirements.
+</p>
+
+<button
+class="btn"
+style="background:white;color:#0757c8;"
+onclick="openPopup('Free Consultation')">
+
+Get Free Consultation
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+PrimeGrow Services
+</h3>
+
+<p>
+Real Estate Digital Marketing Agency helping agents,
+builders, developers and property consultants build
+online visibility and generate enquiries.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+📞 <a href="tel:+919911513666">
+9911513666
+</a>
+</p>
+
+<p>
+💬 <a
+href="https://wa.me/919911513666"
+target="_blank">
+WhatsApp
+</a>
+</p>
+
+<p>
+📍 Chajarsi, Sector 63, Noida, Uttar Pradesh
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<p>
+<a href="#services">Services</a>
+</p>
+
+<p>
+<a href="#plans">Plans</a>
+</p>
+
+<p>
+<a href="#process">Process</a>
+</p>
+
+<p>
+<a href="#contact">Contact</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 PrimeGrow Services. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= FLOATING ENQUIRY ================= -->
+
+<div
+class="floating-enquiry"
+onclick="openPopup('Website Enquiry')">
+
+ENQUIRE NOW
+
+</div>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/919911513666?text=Hello%20PrimeGrow%20Services%2C%20I%20want%20to%20discuss%20Real%20Estate%20Digital%20Marketing."
+target="_blank"
+aria-label="WhatsApp">
+
+☏
+
+</a>
+
+
+<!-- ================= POPUP ================= -->
+
+<div
+class="popup"
+id="popup">
+
+<div class="popup-box">
+
+<button
+class="close"
+onclick="closePopup()">
+
+×
+
+</button>
+
+
+<h2>
+Get In Touch
+</h2>
+
+<p>
+Tell us about your real estate business and we will contact you.
+</p>
+
+
+<form
+id="leadForm">
+
+
+<div class="form-group">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<select id="service" required>
+
+<option value="">
+Select Service
+</option>
+
+<option>
+Website Development
+</option>
+
+<option>
+Social Media Marketing
+</option>
+
+<option>
+Google Business / Local SEO
+</option>
+
+<option>
+Lead Generation
+</option>
+
+<option>
+Google & Meta Ads
+</option>
+
+<option>
+Complete Digital Marketing
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<textarea
+id="message"
+placeholder="Tell us about your requirement">
+</textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn btn-primary"
+style="width:100%;">
+
+Send Enquiry on WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* HERO WORD ANIMATION */
+
+const heroText =
+"Grow Your Real Estate Business With Digital Marketing";
+
+const heroTitle =
+document.getElementById("heroTitle");
+
+heroText.split(" ").forEach((word,index)=>{
+
+const span =
+document.createElement("span");
+
+span.className="word";
+
+span.style.animationDelay =
+(index * 0.08)+"s";
+
+span.innerHTML =
+word;
+
+heroTitle.appendChild(span);
+
+});
+
+
+/* SCROLL REVEAL */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+reveals.forEach(el=>{
+revealObserver.observe(el);
+});
+
+
+/* POPUP */
+
+function openPopup(plan){
+
+document.getElementById("popup")
+.classList.add("active");
+
+if(plan){
+
+document.getElementById("message").value =
+"I am interested in: "+plan;
+
+}
+
+}
+
+
+function closePopup(){
+
+document.getElementById("popup")
+.classList.remove("active");
+
+}
+
+
+/* CLOSE POPUP OUTSIDE */
+
+document.getElementById("popup")
+.addEventListener("click",function(e){
+
+if(e.target === this){
+
+closePopup();
+
+}
+
+});
+
+
+/* WHATSAPP FORM */
+
+document.getElementById("leadForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById("name").value;
+
+const phone =
+document.getElementById("phone").value;
+
+const service =
+document.getElementById("service").value;
+
+const message =
+document.getElementById("message").value;
+
+
+const whatsappMessage =
+`Hello PrimeGrow Services,
+
+New Website Enquiry:
+
+Name: ${name}
+Mobile: ${phone}
+Service: ${service}
+Requirement: ${message}
+
+Please contact me regarding Real Estate Digital Marketing Services.`;
+
+
+const whatsappURL =
+"https://wa.me/919911513666?text="
++
+encodeURIComponent(whatsappMessage);
+
+
+window.open(
+whatsappURL,
+"_blank"
+);
+
+});
+
+
+/* ESC KEY */
+
+document.addEventListener("keydown",function(e){
+
+if(e.key === "Escape"){
+
+closePopup();
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
